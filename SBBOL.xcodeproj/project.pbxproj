@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8C01276925519120001F8447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01276825519120001F8447 /* AppDelegate.swift */; };
-		8C01276B25519120001F8447 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01276A25519120001F8447 /* SceneDelegate.swift */; };
 		8C01276D25519120001F8447 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01276C25519120001F8447 /* ViewController.swift */; };
 		8C01277025519120001F8447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C01276E25519120001F8447 /* Main.storyboard */; };
 		8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C01277125519120001F8447 /* SBBOL.xcdatamodeld */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		8C01276525519120001F8447 /* SBBOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBBOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C01276825519120001F8447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C01276A25519120001F8447 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8C01276C25519120001F8447 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8C01276F25519120001F8447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C01277225519120001F8447 /* SBBOL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SBBOL.xcdatamodel; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				8C01276825519120001F8447 /* AppDelegate.swift */,
-				8C01276A25519120001F8447 /* SceneDelegate.swift */,
 				8C01276C25519120001F8447 /* ViewController.swift */,
 				8C01276E25519120001F8447 /* Main.storyboard */,
 				8C01277425519120001F8447 /* Assets.xcassets */,
@@ -143,7 +140,6 @@
 				8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */,
 				8C01276D25519120001F8447 /* ViewController.swift in Sources */,
 				8C01276925519120001F8447 /* AppDelegate.swift in Sources */,
-				8C01276B25519120001F8447 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +288,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SBBOL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SBBOL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -22,11 +22,9 @@
 		8C7C51B22552DB1600AAFDD3 /* BaseTabBarInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AA2552DB1600AAFDD3 /* BaseTabBarInputModel.swift */; };
 		8C7C51B32552DB1600AAFDD3 /* BaseTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AB2552DB1600AAFDD3 /* BaseTabBarPresenter.swift */; };
 		8C7C51B42552DB1600AAFDD3 /* BaseTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AC2552DB1600AAFDD3 /* BaseTabBarRouter.swift */; };
-		8C7C51B52552DB1600AAFDD3 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AD2552DB1600AAFDD3 /* BaseTabBarViewController.swift */; };
 		8C7C51B62552DB1600AAFDD3 /* BaseTabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AE2552DB1600AAFDD3 /* BaseTabBarProtocols.swift */; };
 		8C7C51B72552DB1600AAFDD3 /* BaseTabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AF2552DB1600AAFDD3 /* BaseTabBarAssembly.swift */; };
 		8C7C51B82552DB1600AAFDD3 /* BaseTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51B02552DB1600AAFDD3 /* BaseTabBarInteractor.swift */; };
-		8C7C51B92552DB1600AAFDD3 /* BaseTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51B12552DB1600AAFDD3 /* BaseTabBarViewController.xib */; };
 		8C7C51C82552DF2300AAFDD3 /* TranslateInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C02552DF2300AAFDD3 /* TranslateInputModel.swift */; };
 		8C7C51C92552DF2300AAFDD3 /* TranslatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C12552DF2300AAFDD3 /* TranslatePresenter.swift */; };
 		8C7C51CA2552DF2300AAFDD3 /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C22552DF2300AAFDD3 /* TranslateRouter.swift */; };
@@ -51,6 +49,9 @@
 		8C7C51EF2552DF3A00AAFDD3 /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51E72552DF3A00AAFDD3 /* SettingsAssembly.swift */; };
 		8C7C51F02552DF3A00AAFDD3 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51E82552DF3A00AAFDD3 /* SettingsInteractor.swift */; };
 		8C7C51F12552DF3A00AAFDD3 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51E92552DF3A00AAFDD3 /* SettingsViewController.xib */; };
+		8C7C51F52552E05A00AAFDD3 /* TabAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51F42552E05A00AAFDD3 /* TabAssembly.swift */; };
+		8C7C51FB2552E62F00AAFDD3 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51F92552E62F00AAFDD3 /* BaseTabBarViewController.swift */; };
+		8C7C51FC2552E62F00AAFDD3 /* BaseTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51FA2552E62F00AAFDD3 /* BaseTabBarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,11 +72,9 @@
 		8C7C51AA2552DB1600AAFDD3 /* BaseTabBarInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarInputModel.swift; sourceTree = "<group>"; };
 		8C7C51AB2552DB1600AAFDD3 /* BaseTabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarPresenter.swift; sourceTree = "<group>"; };
 		8C7C51AC2552DB1600AAFDD3 /* BaseTabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarRouter.swift; sourceTree = "<group>"; };
-		8C7C51AD2552DB1600AAFDD3 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		8C7C51AE2552DB1600AAFDD3 /* BaseTabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarProtocols.swift; sourceTree = "<group>"; };
 		8C7C51AF2552DB1600AAFDD3 /* BaseTabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarAssembly.swift; sourceTree = "<group>"; };
 		8C7C51B02552DB1600AAFDD3 /* BaseTabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarInteractor.swift; sourceTree = "<group>"; };
-		8C7C51B12552DB1600AAFDD3 /* BaseTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTabBarViewController.xib; sourceTree = "<group>"; };
 		8C7C51C02552DF2300AAFDD3 /* TranslateInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateInputModel.swift; sourceTree = "<group>"; };
 		8C7C51C12552DF2300AAFDD3 /* TranslatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatePresenter.swift; sourceTree = "<group>"; };
 		8C7C51C22552DF2300AAFDD3 /* TranslateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
@@ -100,6 +99,9 @@
 		8C7C51E72552DF3A00AAFDD3 /* SettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
 		8C7C51E82552DF3A00AAFDD3 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		8C7C51E92552DF3A00AAFDD3 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		8C7C51F42552E05A00AAFDD3 /* TabAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAssembly.swift; sourceTree = "<group>"; };
+		8C7C51F92552E62F00AAFDD3 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		8C7C51FA2552E62F00AAFDD3 /* BaseTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTabBarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,14 +174,15 @@
 		8C7C51982552DAE000AAFDD3 /* BaseTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				8C7C51F32552E03600AAFDD3 /* Protocols */,
 				8C7C51AA2552DB1600AAFDD3 /* BaseTabBarInputModel.swift */,
 				8C7C51AB2552DB1600AAFDD3 /* BaseTabBarPresenter.swift */,
 				8C7C51AC2552DB1600AAFDD3 /* BaseTabBarRouter.swift */,
-				8C7C51AD2552DB1600AAFDD3 /* BaseTabBarViewController.swift */,
 				8C7C51AE2552DB1600AAFDD3 /* BaseTabBarProtocols.swift */,
 				8C7C51AF2552DB1600AAFDD3 /* BaseTabBarAssembly.swift */,
 				8C7C51B02552DB1600AAFDD3 /* BaseTabBarInteractor.swift */,
-				8C7C51B12552DB1600AAFDD3 /* BaseTabBarViewController.xib */,
+				8C7C51F92552E62F00AAFDD3 /* BaseTabBarViewController.swift */,
+				8C7C51FA2552E62F00AAFDD3 /* BaseTabBarViewController.xib */,
 			);
 			path = BaseTabBar;
 			sourceTree = "<group>";
@@ -227,6 +230,14 @@
 				8C7C51E92552DF3A00AAFDD3 /* SettingsViewController.xib */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		8C7C51F32552E03600AAFDD3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C51F42552E05A00AAFDD3 /* TabAssembly.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,11 +297,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7C51FC2552E62F00AAFDD3 /* BaseTabBarViewController.xib in Resources */,
 				8C01277825519120001F8447 /* LaunchScreen.storyboard in Resources */,
 				8C01277525519120001F8447 /* Assets.xcassets in Resources */,
 				8C7C51A82552DB0200AAFDD3 /* RootViewController.xib in Resources */,
 				8C7C51CF2552DF2300AAFDD3 /* TranslateViewController.xib in Resources */,
-				8C7C51B92552DB1600AAFDD3 /* BaseTabBarViewController.xib in Resources */,
 				8C7C51F12552DF3A00AAFDD3 /* SettingsViewController.xib in Resources */,
 				8C7C51E02552DF3000AAFDD3 /* HistoryViewController.xib in Resources */,
 			);
@@ -320,7 +331,6 @@
 				8C7C51A72552DB0200AAFDD3 /* RootInteractor.swift in Sources */,
 				8C7C51CA2552DF2300AAFDD3 /* TranslateRouter.swift in Sources */,
 				8C7C51EC2552DF3A00AAFDD3 /* SettingsRouter.swift in Sources */,
-				8C7C51B52552DB1600AAFDD3 /* BaseTabBarViewController.swift in Sources */,
 				8C7C51D92552DF3000AAFDD3 /* HistoryInputModel.swift in Sources */,
 				8C7C51A62552DB0200AAFDD3 /* RootAssembly.swift in Sources */,
 				8C7C51CC2552DF2300AAFDD3 /* TranslateProtocols.swift in Sources */,
@@ -331,9 +341,11 @@
 				8C7C51EA2552DF3A00AAFDD3 /* SettingsInputModel.swift in Sources */,
 				8C7C51B32552DB1600AAFDD3 /* BaseTabBarPresenter.swift in Sources */,
 				8C7C51F02552DF3A00AAFDD3 /* SettingsInteractor.swift in Sources */,
+				8C7C51FB2552E62F00AAFDD3 /* BaseTabBarViewController.swift in Sources */,
 				8C7C51A32552DB0200AAFDD3 /* RootRouter.swift in Sources */,
 				8C7C51CE2552DF2300AAFDD3 /* TranslateInteractor.swift in Sources */,
 				8C7C51EB2552DF3A00AAFDD3 /* SettingsPresenter.swift in Sources */,
+				8C7C51F52552E05A00AAFDD3 /* TabAssembly.swift in Sources */,
 				8C7C51ED2552DF3A00AAFDD3 /* SettingsViewController.swift in Sources */,
 				8C01276925519120001F8447 /* AppDelegate.swift in Sources */,
 				8C7C51DF2552DF3000AAFDD3 /* HistoryInteractor.swift in Sources */,

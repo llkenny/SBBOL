@@ -28,6 +28,11 @@ final class BaseTabBarPresenter {
     }
 
     // MARK: - Functions
+
+    func viewIsReady() {
+        let viewControllers = inputModel.assemblies.map { $0.viewController }
+        contentViewController?.update(viewControllers: viewControllers)
+    }
 }
 
 extension BaseTabBarPresenter: BaseTabBarModule {

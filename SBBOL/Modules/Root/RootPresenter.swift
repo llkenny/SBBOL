@@ -28,14 +28,26 @@ final class RootPresenter {
     }
 
     // MARK: - Functions
+
+    func viewIsReady() {
+        let assemblies = configTabAssemblies()
+        router?.navigate(to: .mainTabBar(assemblies: assemblies), completion: nil)
+    }
+
+    func configTabAssemblies() -> [TabAssembly] {
+        let translate = TranslateAssembly(inputModel: TranslateInputModel(), delegate: self)
+        let history = HistoryAssembly(inputModel: HistoryInputModel(), delegate: self)
+        let settings = SettingsAssembly(inputModel: SettingsInputModel(), delegate: self)
+        return [translate, history, settings]
+    }
 }
 
 extension RootPresenter: RootModule {
 }
 
 extension RootPresenter: RootViewToPresenter {
-
-    func viewDidLoad() {
-        router?.navigate(to: .mainTabBar, completion: nil)
-    }
 }
+
+extension RootPresenter: TranslateDelegate {}
+extension RootPresenter: HistoryDelegate {}
+extension RootPresenter: SettingsDelegate {}

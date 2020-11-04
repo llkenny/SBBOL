@@ -28,3 +28,10 @@ final class SettingsAssembly {
 
     // MARK: - Functions
 }
+
+extension SettingsAssembly: TabAssembly {
+
+    var viewController: UIViewController {
+        return contentViewController
+    }
+}

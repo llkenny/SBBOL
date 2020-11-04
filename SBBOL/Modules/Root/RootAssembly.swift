@@ -25,6 +25,9 @@ final class RootAssembly {
         self.presenter = RootPresenter(contentViewController: self.contentViewController, router: self.router, interactor: self.interactor, inputModel: inputModel, delegate: delegate)
         self.contentViewController.presenter = self.presenter
         router.module = presenter
+
+        contentViewController.loadViewIfNeeded()
+        presenter.viewIsReady()
     }
 
     // MARK: - Functions

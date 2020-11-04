@@ -28,3 +28,10 @@ final class HistoryAssembly {
 
     // MARK: - Functions
 }
+
+extension HistoryAssembly: TabAssembly {
+
+    var viewController: UIViewController {
+        return contentViewController
+    }
+}

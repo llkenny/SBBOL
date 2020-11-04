@@ -14,8 +14,6 @@ protocol RootDelegate: class { // Delegate protocol.
 }
 
 protocol RootViewToPresenter: class { // View calls, Presenter listens.
-
-    func viewDidLoad()
 }
 
 protocol RootPresenterToView: class {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.

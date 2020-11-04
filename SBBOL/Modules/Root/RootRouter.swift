@@ -8,8 +8,7 @@
 import Foundation
 
 enum RootNavigation {
-    case
-    mainTabBar
+    case mainTabBar(assemblies: [TabAssembly])
 }
 
 typealias RootRouterClosure = (() -> Void)
@@ -30,8 +29,8 @@ final class RootRouter {
 
     // MARK: - Functions
 
-    private func presentMainTabBar() {
-        let baseTabBarAssembly = BaseTabBarAssembly(inputModel: BaseTabBarInputModel(), delegate: module)
+    private func presentMainTabBar(assemblies: [TabAssembly]) {
+        let baseTabBarAssembly = BaseTabBarAssembly(inputModel: BaseTabBarInputModel(assemblies: assemblies), delegate: module)
         contentViewController?.present(viewController: baseTabBarAssembly.contentViewController)
         self.baseTabBarAssembly = baseTabBarAssembly
     }
@@ -41,8 +40,8 @@ extension RootRouter: RootPresenterToRouter {
 
     func navigate(to destination: RootNavigation, completion: RootRouterClosure? = nil) {
         switch destination {
-        case .mainTabBar:
-            presentMainTabBar()
+        case .mainTabBar(let assemblies):
+            presentMainTabBar(assemblies: assemblies)
         }
     }
 }

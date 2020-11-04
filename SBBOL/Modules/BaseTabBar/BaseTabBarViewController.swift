@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class BaseTabBarViewController: UIViewController {
+final class BaseTabBarViewController: UITabBarController {
 
     // MARK: - Constants
 
@@ -33,6 +33,10 @@ final class BaseTabBarViewController: UIViewController {
 }
 
 extension BaseTabBarViewController: BaseTabBarPresenterToView {
+
+    func update(viewControllers: [UIViewController]) {
+        self.viewControllers = viewControllers
+    }
 }
 
 extension BaseTabBarViewController: BaseTabBarControllerToRouter {

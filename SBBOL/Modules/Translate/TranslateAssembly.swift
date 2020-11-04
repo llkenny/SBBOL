@@ -28,3 +28,10 @@ final class TranslateAssembly {
 
     // MARK: - Functions
 }
+
+extension TranslateAssembly: TabAssembly {
+
+    var viewController: UIViewController {
+        return contentViewController
+    }
+}

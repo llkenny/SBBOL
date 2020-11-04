@@ -8,22 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		8C01276925519120001F8447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01276825519120001F8447 /* AppDelegate.swift */; };
-		8C01276D25519120001F8447 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01276C25519120001F8447 /* ViewController.swift */; };
-		8C01277025519120001F8447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C01276E25519120001F8447 /* Main.storyboard */; };
 		8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C01277125519120001F8447 /* SBBOL.xcdatamodeld */; };
 		8C01277525519120001F8447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C01277425519120001F8447 /* Assets.xcassets */; };
 		8C01277825519120001F8447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C01277625519120001F8447 /* LaunchScreen.storyboard */; };
+		8C7C51A12552DB0200AAFDD3 /* RootInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51992552DB0200AAFDD3 /* RootInputModel.swift */; };
+		8C7C51A22552DB0200AAFDD3 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519A2552DB0200AAFDD3 /* RootPresenter.swift */; };
+		8C7C51A32552DB0200AAFDD3 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519B2552DB0200AAFDD3 /* RootRouter.swift */; };
+		8C7C51A42552DB0200AAFDD3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519C2552DB0200AAFDD3 /* RootViewController.swift */; };
+		8C7C51A52552DB0200AAFDD3 /* RootProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519D2552DB0200AAFDD3 /* RootProtocols.swift */; };
+		8C7C51A62552DB0200AAFDD3 /* RootAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519E2552DB0200AAFDD3 /* RootAssembly.swift */; };
+		8C7C51A72552DB0200AAFDD3 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519F2552DB0200AAFDD3 /* RootInteractor.swift */; };
+		8C7C51A82552DB0200AAFDD3 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51A02552DB0200AAFDD3 /* RootViewController.xib */; };
+		8C7C51B22552DB1600AAFDD3 /* BaseTabBarInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AA2552DB1600AAFDD3 /* BaseTabBarInputModel.swift */; };
+		8C7C51B32552DB1600AAFDD3 /* BaseTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AB2552DB1600AAFDD3 /* BaseTabBarPresenter.swift */; };
+		8C7C51B42552DB1600AAFDD3 /* BaseTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AC2552DB1600AAFDD3 /* BaseTabBarRouter.swift */; };
+		8C7C51B52552DB1600AAFDD3 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AD2552DB1600AAFDD3 /* BaseTabBarViewController.swift */; };
+		8C7C51B62552DB1600AAFDD3 /* BaseTabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AE2552DB1600AAFDD3 /* BaseTabBarProtocols.swift */; };
+		8C7C51B72552DB1600AAFDD3 /* BaseTabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AF2552DB1600AAFDD3 /* BaseTabBarAssembly.swift */; };
+		8C7C51B82552DB1600AAFDD3 /* BaseTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51B02552DB1600AAFDD3 /* BaseTabBarInteractor.swift */; };
+		8C7C51B92552DB1600AAFDD3 /* BaseTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51B12552DB1600AAFDD3 /* BaseTabBarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C01276525519120001F8447 /* SBBOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBBOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C01276825519120001F8447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C01276C25519120001F8447 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8C01276F25519120001F8447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C01277225519120001F8447 /* SBBOL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SBBOL.xcdatamodel; sourceTree = "<group>"; };
 		8C01277425519120001F8447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C01277725519120001F8447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C01277925519120001F8447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C7C51992552DB0200AAFDD3 /* RootInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInputModel.swift; sourceTree = "<group>"; };
+		8C7C519A2552DB0200AAFDD3 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
+		8C7C519B2552DB0200AAFDD3 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		8C7C519C2552DB0200AAFDD3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		8C7C519D2552DB0200AAFDD3 /* RootProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootProtocols.swift; sourceTree = "<group>"; };
+		8C7C519E2552DB0200AAFDD3 /* RootAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssembly.swift; sourceTree = "<group>"; };
+		8C7C519F2552DB0200AAFDD3 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		8C7C51A02552DB0200AAFDD3 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		8C7C51AA2552DB1600AAFDD3 /* BaseTabBarInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarInputModel.swift; sourceTree = "<group>"; };
+		8C7C51AB2552DB1600AAFDD3 /* BaseTabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarPresenter.swift; sourceTree = "<group>"; };
+		8C7C51AC2552DB1600AAFDD3 /* BaseTabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarRouter.swift; sourceTree = "<group>"; };
+		8C7C51AD2552DB1600AAFDD3 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		8C7C51AE2552DB1600AAFDD3 /* BaseTabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarProtocols.swift; sourceTree = "<group>"; };
+		8C7C51AF2552DB1600AAFDD3 /* BaseTabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarAssembly.swift; sourceTree = "<group>"; };
+		8C7C51B02552DB1600AAFDD3 /* BaseTabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarInteractor.swift; sourceTree = "<group>"; };
+		8C7C51B12552DB1600AAFDD3 /* BaseTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTabBarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +84,53 @@
 		8C01276725519120001F8447 /* SBBOL */ = {
 			isa = PBXGroup;
 			children = (
+				8C7C51822552D97C00AAFDD3 /* Modules */,
 				8C01276825519120001F8447 /* AppDelegate.swift */,
-				8C01276C25519120001F8447 /* ViewController.swift */,
-				8C01276E25519120001F8447 /* Main.storyboard */,
 				8C01277425519120001F8447 /* Assets.xcassets */,
 				8C01277625519120001F8447 /* LaunchScreen.storyboard */,
 				8C01277925519120001F8447 /* Info.plist */,
 				8C01277125519120001F8447 /* SBBOL.xcdatamodeld */,
 			);
 			path = SBBOL;
+			sourceTree = "<group>";
+		};
+		8C7C51822552D97C00AAFDD3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C51982552DAE000AAFDD3 /* BaseTabBar */,
+				8C7C51972552DADC00AAFDD3 /* Root */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8C7C51972552DADC00AAFDD3 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C51992552DB0200AAFDD3 /* RootInputModel.swift */,
+				8C7C519A2552DB0200AAFDD3 /* RootPresenter.swift */,
+				8C7C519B2552DB0200AAFDD3 /* RootRouter.swift */,
+				8C7C519C2552DB0200AAFDD3 /* RootViewController.swift */,
+				8C7C519D2552DB0200AAFDD3 /* RootProtocols.swift */,
+				8C7C519E2552DB0200AAFDD3 /* RootAssembly.swift */,
+				8C7C519F2552DB0200AAFDD3 /* RootInteractor.swift */,
+				8C7C51A02552DB0200AAFDD3 /* RootViewController.xib */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		8C7C51982552DAE000AAFDD3 /* BaseTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C51AA2552DB1600AAFDD3 /* BaseTabBarInputModel.swift */,
+				8C7C51AB2552DB1600AAFDD3 /* BaseTabBarPresenter.swift */,
+				8C7C51AC2552DB1600AAFDD3 /* BaseTabBarRouter.swift */,
+				8C7C51AD2552DB1600AAFDD3 /* BaseTabBarViewController.swift */,
+				8C7C51AE2552DB1600AAFDD3 /* BaseTabBarProtocols.swift */,
+				8C7C51AF2552DB1600AAFDD3 /* BaseTabBarAssembly.swift */,
+				8C7C51B02552DB1600AAFDD3 /* BaseTabBarInteractor.swift */,
+				8C7C51B12552DB1600AAFDD3 /* BaseTabBarViewController.xib */,
+			);
+			path = BaseTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +192,8 @@
 			files = (
 				8C01277825519120001F8447 /* LaunchScreen.storyboard in Resources */,
 				8C01277525519120001F8447 /* Assets.xcassets in Resources */,
-				8C01277025519120001F8447 /* Main.storyboard in Resources */,
+				8C7C51A82552DB0200AAFDD3 /* RootViewController.xib in Resources */,
+				8C7C51B92552DB1600AAFDD3 /* BaseTabBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +204,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7C51A22552DB0200AAFDD3 /* RootPresenter.swift in Sources */,
+				8C7C51B62552DB1600AAFDD3 /* BaseTabBarProtocols.swift in Sources */,
+				8C7C51B22552DB1600AAFDD3 /* BaseTabBarInputModel.swift in Sources */,
+				8C7C51A12552DB0200AAFDD3 /* RootInputModel.swift in Sources */,
+				8C7C51B42552DB1600AAFDD3 /* BaseTabBarRouter.swift in Sources */,
 				8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */,
-				8C01276D25519120001F8447 /* ViewController.swift in Sources */,
+				8C7C51A42552DB0200AAFDD3 /* RootViewController.swift in Sources */,
+				8C7C51A72552DB0200AAFDD3 /* RootInteractor.swift in Sources */,
+				8C7C51B52552DB1600AAFDD3 /* BaseTabBarViewController.swift in Sources */,
+				8C7C51A62552DB0200AAFDD3 /* RootAssembly.swift in Sources */,
+				8C7C51B72552DB1600AAFDD3 /* BaseTabBarAssembly.swift in Sources */,
+				8C7C51B32552DB1600AAFDD3 /* BaseTabBarPresenter.swift in Sources */,
+				8C7C51A32552DB0200AAFDD3 /* RootRouter.swift in Sources */,
 				8C01276925519120001F8447 /* AppDelegate.swift in Sources */,
+				8C7C51A52552DB0200AAFDD3 /* RootProtocols.swift in Sources */,
+				8C7C51B82552DB1600AAFDD3 /* BaseTabBarInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8C01276E25519120001F8447 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8C01276F25519120001F8447 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8C01277625519120001F8447 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

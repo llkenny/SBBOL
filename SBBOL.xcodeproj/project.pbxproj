@@ -27,6 +27,30 @@
 		8C7C51B72552DB1600AAFDD3 /* BaseTabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51AF2552DB1600AAFDD3 /* BaseTabBarAssembly.swift */; };
 		8C7C51B82552DB1600AAFDD3 /* BaseTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51B02552DB1600AAFDD3 /* BaseTabBarInteractor.swift */; };
 		8C7C51B92552DB1600AAFDD3 /* BaseTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51B12552DB1600AAFDD3 /* BaseTabBarViewController.xib */; };
+		8C7C51C82552DF2300AAFDD3 /* TranslateInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C02552DF2300AAFDD3 /* TranslateInputModel.swift */; };
+		8C7C51C92552DF2300AAFDD3 /* TranslatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C12552DF2300AAFDD3 /* TranslatePresenter.swift */; };
+		8C7C51CA2552DF2300AAFDD3 /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C22552DF2300AAFDD3 /* TranslateRouter.swift */; };
+		8C7C51CB2552DF2300AAFDD3 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C32552DF2300AAFDD3 /* TranslateViewController.swift */; };
+		8C7C51CC2552DF2300AAFDD3 /* TranslateProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C42552DF2300AAFDD3 /* TranslateProtocols.swift */; };
+		8C7C51CD2552DF2300AAFDD3 /* TranslateAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C52552DF2300AAFDD3 /* TranslateAssembly.swift */; };
+		8C7C51CE2552DF2300AAFDD3 /* TranslateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51C62552DF2300AAFDD3 /* TranslateInteractor.swift */; };
+		8C7C51CF2552DF2300AAFDD3 /* TranslateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51C72552DF2300AAFDD3 /* TranslateViewController.xib */; };
+		8C7C51D92552DF3000AAFDD3 /* HistoryInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51D12552DF3000AAFDD3 /* HistoryInputModel.swift */; };
+		8C7C51DA2552DF3000AAFDD3 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51D22552DF3000AAFDD3 /* HistoryPresenter.swift */; };
+		8C7C51DB2552DF3000AAFDD3 /* HistoryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51D32552DF3000AAFDD3 /* HistoryRouter.swift */; };
+		8C7C51DC2552DF3000AAFDD3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51D42552DF3000AAFDD3 /* HistoryViewController.swift */; };
+		8C7C51DD2552DF3000AAFDD3 /* HistoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51D52552DF3000AAFDD3 /* HistoryProtocols.swift */; };
+		8C7C51DE2552DF3000AAFDD3 /* HistoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51D62552DF3000AAFDD3 /* HistoryAssembly.swift */; };
+		8C7C51DF2552DF3000AAFDD3 /* HistoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51D72552DF3000AAFDD3 /* HistoryInteractor.swift */; };
+		8C7C51E02552DF3000AAFDD3 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51D82552DF3000AAFDD3 /* HistoryViewController.xib */; };
+		8C7C51EA2552DF3A00AAFDD3 /* SettingsInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51E22552DF3A00AAFDD3 /* SettingsInputModel.swift */; };
+		8C7C51EB2552DF3A00AAFDD3 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51E32552DF3A00AAFDD3 /* SettingsPresenter.swift */; };
+		8C7C51EC2552DF3A00AAFDD3 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51E42552DF3A00AAFDD3 /* SettingsRouter.swift */; };
+		8C7C51ED2552DF3A00AAFDD3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51E52552DF3A00AAFDD3 /* SettingsViewController.swift */; };
+		8C7C51EE2552DF3A00AAFDD3 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51E62552DF3A00AAFDD3 /* SettingsProtocols.swift */; };
+		8C7C51EF2552DF3A00AAFDD3 /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51E72552DF3A00AAFDD3 /* SettingsAssembly.swift */; };
+		8C7C51F02552DF3A00AAFDD3 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51E82552DF3A00AAFDD3 /* SettingsInteractor.swift */; };
+		8C7C51F12552DF3A00AAFDD3 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51E92552DF3A00AAFDD3 /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +76,30 @@
 		8C7C51AF2552DB1600AAFDD3 /* BaseTabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarAssembly.swift; sourceTree = "<group>"; };
 		8C7C51B02552DB1600AAFDD3 /* BaseTabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarInteractor.swift; sourceTree = "<group>"; };
 		8C7C51B12552DB1600AAFDD3 /* BaseTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTabBarViewController.xib; sourceTree = "<group>"; };
+		8C7C51C02552DF2300AAFDD3 /* TranslateInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateInputModel.swift; sourceTree = "<group>"; };
+		8C7C51C12552DF2300AAFDD3 /* TranslatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatePresenter.swift; sourceTree = "<group>"; };
+		8C7C51C22552DF2300AAFDD3 /* TranslateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
+		8C7C51C32552DF2300AAFDD3 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		8C7C51C42552DF2300AAFDD3 /* TranslateProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateProtocols.swift; sourceTree = "<group>"; };
+		8C7C51C52552DF2300AAFDD3 /* TranslateAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateAssembly.swift; sourceTree = "<group>"; };
+		8C7C51C62552DF2300AAFDD3 /* TranslateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateInteractor.swift; sourceTree = "<group>"; };
+		8C7C51C72552DF2300AAFDD3 /* TranslateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslateViewController.xib; sourceTree = "<group>"; };
+		8C7C51D12552DF3000AAFDD3 /* HistoryInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInputModel.swift; sourceTree = "<group>"; };
+		8C7C51D22552DF3000AAFDD3 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		8C7C51D32552DF3000AAFDD3 /* HistoryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRouter.swift; sourceTree = "<group>"; };
+		8C7C51D42552DF3000AAFDD3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		8C7C51D52552DF3000AAFDD3 /* HistoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryProtocols.swift; sourceTree = "<group>"; };
+		8C7C51D62552DF3000AAFDD3 /* HistoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAssembly.swift; sourceTree = "<group>"; };
+		8C7C51D72552DF3000AAFDD3 /* HistoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInteractor.swift; sourceTree = "<group>"; };
+		8C7C51D82552DF3000AAFDD3 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		8C7C51E22552DF3A00AAFDD3 /* SettingsInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInputModel.swift; sourceTree = "<group>"; };
+		8C7C51E32552DF3A00AAFDD3 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		8C7C51E42552DF3A00AAFDD3 /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		8C7C51E52552DF3A00AAFDD3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8C7C51E62552DF3A00AAFDD3 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		8C7C51E72552DF3A00AAFDD3 /* SettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
+		8C7C51E82552DF3A00AAFDD3 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		8C7C51E92552DF3A00AAFDD3 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +147,9 @@
 			children = (
 				8C7C51982552DAE000AAFDD3 /* BaseTabBar */,
 				8C7C51972552DADC00AAFDD3 /* Root */,
+				8C7C51BD2552DEEC00AAFDD3 /* Translate */,
+				8C7C51BE2552DF0600AAFDD3 /* History */,
+				8C7C51BF2552DF1000AAFDD3 /* Settings */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -131,6 +182,51 @@
 				8C7C51B12552DB1600AAFDD3 /* BaseTabBarViewController.xib */,
 			);
 			path = BaseTabBar;
+			sourceTree = "<group>";
+		};
+		8C7C51BD2552DEEC00AAFDD3 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C51C02552DF2300AAFDD3 /* TranslateInputModel.swift */,
+				8C7C51C12552DF2300AAFDD3 /* TranslatePresenter.swift */,
+				8C7C51C22552DF2300AAFDD3 /* TranslateRouter.swift */,
+				8C7C51C32552DF2300AAFDD3 /* TranslateViewController.swift */,
+				8C7C51C42552DF2300AAFDD3 /* TranslateProtocols.swift */,
+				8C7C51C52552DF2300AAFDD3 /* TranslateAssembly.swift */,
+				8C7C51C62552DF2300AAFDD3 /* TranslateInteractor.swift */,
+				8C7C51C72552DF2300AAFDD3 /* TranslateViewController.xib */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		8C7C51BE2552DF0600AAFDD3 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C51D12552DF3000AAFDD3 /* HistoryInputModel.swift */,
+				8C7C51D22552DF3000AAFDD3 /* HistoryPresenter.swift */,
+				8C7C51D32552DF3000AAFDD3 /* HistoryRouter.swift */,
+				8C7C51D42552DF3000AAFDD3 /* HistoryViewController.swift */,
+				8C7C51D52552DF3000AAFDD3 /* HistoryProtocols.swift */,
+				8C7C51D62552DF3000AAFDD3 /* HistoryAssembly.swift */,
+				8C7C51D72552DF3000AAFDD3 /* HistoryInteractor.swift */,
+				8C7C51D82552DF3000AAFDD3 /* HistoryViewController.xib */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		8C7C51BF2552DF1000AAFDD3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C51E22552DF3A00AAFDD3 /* SettingsInputModel.swift */,
+				8C7C51E32552DF3A00AAFDD3 /* SettingsPresenter.swift */,
+				8C7C51E42552DF3A00AAFDD3 /* SettingsRouter.swift */,
+				8C7C51E52552DF3A00AAFDD3 /* SettingsViewController.swift */,
+				8C7C51E62552DF3A00AAFDD3 /* SettingsProtocols.swift */,
+				8C7C51E72552DF3A00AAFDD3 /* SettingsAssembly.swift */,
+				8C7C51E82552DF3A00AAFDD3 /* SettingsInteractor.swift */,
+				8C7C51E92552DF3A00AAFDD3 /* SettingsViewController.xib */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +289,10 @@
 				8C01277825519120001F8447 /* LaunchScreen.storyboard in Resources */,
 				8C01277525519120001F8447 /* Assets.xcassets in Resources */,
 				8C7C51A82552DB0200AAFDD3 /* RootViewController.xib in Resources */,
+				8C7C51CF2552DF2300AAFDD3 /* TranslateViewController.xib in Resources */,
 				8C7C51B92552DB1600AAFDD3 /* BaseTabBarViewController.xib in Resources */,
+				8C7C51F12552DF3A00AAFDD3 /* SettingsViewController.xib in Resources */,
+				8C7C51E02552DF3000AAFDD3 /* HistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,20 +304,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C7C51A22552DB0200AAFDD3 /* RootPresenter.swift in Sources */,
+				8C7C51CB2552DF2300AAFDD3 /* TranslateViewController.swift in Sources */,
 				8C7C51B62552DB1600AAFDD3 /* BaseTabBarProtocols.swift in Sources */,
+				8C7C51C82552DF2300AAFDD3 /* TranslateInputModel.swift in Sources */,
 				8C7C51B22552DB1600AAFDD3 /* BaseTabBarInputModel.swift in Sources */,
+				8C7C51DA2552DF3000AAFDD3 /* HistoryPresenter.swift in Sources */,
+				8C7C51DC2552DF3000AAFDD3 /* HistoryViewController.swift in Sources */,
 				8C7C51A12552DB0200AAFDD3 /* RootInputModel.swift in Sources */,
+				8C7C51DD2552DF3000AAFDD3 /* HistoryProtocols.swift in Sources */,
+				8C7C51EE2552DF3A00AAFDD3 /* SettingsProtocols.swift in Sources */,
+				8C7C51C92552DF2300AAFDD3 /* TranslatePresenter.swift in Sources */,
 				8C7C51B42552DB1600AAFDD3 /* BaseTabBarRouter.swift in Sources */,
 				8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */,
 				8C7C51A42552DB0200AAFDD3 /* RootViewController.swift in Sources */,
 				8C7C51A72552DB0200AAFDD3 /* RootInteractor.swift in Sources */,
+				8C7C51CA2552DF2300AAFDD3 /* TranslateRouter.swift in Sources */,
+				8C7C51EC2552DF3A00AAFDD3 /* SettingsRouter.swift in Sources */,
 				8C7C51B52552DB1600AAFDD3 /* BaseTabBarViewController.swift in Sources */,
+				8C7C51D92552DF3000AAFDD3 /* HistoryInputModel.swift in Sources */,
 				8C7C51A62552DB0200AAFDD3 /* RootAssembly.swift in Sources */,
+				8C7C51CC2552DF2300AAFDD3 /* TranslateProtocols.swift in Sources */,
+				8C7C51DB2552DF3000AAFDD3 /* HistoryRouter.swift in Sources */,
 				8C7C51B72552DB1600AAFDD3 /* BaseTabBarAssembly.swift in Sources */,
+				8C7C51DE2552DF3000AAFDD3 /* HistoryAssembly.swift in Sources */,
+				8C7C51CD2552DF2300AAFDD3 /* TranslateAssembly.swift in Sources */,
+				8C7C51EA2552DF3A00AAFDD3 /* SettingsInputModel.swift in Sources */,
 				8C7C51B32552DB1600AAFDD3 /* BaseTabBarPresenter.swift in Sources */,
+				8C7C51F02552DF3A00AAFDD3 /* SettingsInteractor.swift in Sources */,
 				8C7C51A32552DB0200AAFDD3 /* RootRouter.swift in Sources */,
+				8C7C51CE2552DF2300AAFDD3 /* TranslateInteractor.swift in Sources */,
+				8C7C51EB2552DF3A00AAFDD3 /* SettingsPresenter.swift in Sources */,
+				8C7C51ED2552DF3A00AAFDD3 /* SettingsViewController.swift in Sources */,
 				8C01276925519120001F8447 /* AppDelegate.swift in Sources */,
+				8C7C51DF2552DF3000AAFDD3 /* HistoryInteractor.swift in Sources */,
 				8C7C51A52552DB0200AAFDD3 /* RootProtocols.swift in Sources */,
+				8C7C51EF2552DF3A00AAFDD3 /* SettingsAssembly.swift in Sources */,
 				8C7C51B82552DB1600AAFDD3 /* BaseTabBarInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

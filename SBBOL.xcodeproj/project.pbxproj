@@ -21,6 +21,7 @@
 		8C0F5EE82553EBB9001A29C1 /* AzureTranslateRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EE72553EBB9001A29C1 /* AzureTranslateRequestData.swift */; };
 		8C0F5EEB2553F354001A29C1 /* AzureTranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */; };
 		8C2E357D255435B800CCF841 /* AzureLanguageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */; };
+		8C2E35802554426900CCF841 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357F2554426900CCF841 /* APIService.swift */; };
 		8C7C51A12552DB0200AAFDD3 /* RootInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51992552DB0200AAFDD3 /* RootInputModel.swift */; };
 		8C7C51A22552DB0200AAFDD3 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519A2552DB0200AAFDD3 /* RootPresenter.swift */; };
 		8C7C51A32552DB0200AAFDD3 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519B2552DB0200AAFDD3 /* RootRouter.swift */; };
@@ -81,6 +82,7 @@
 		8C0F5EE72553EBB9001A29C1 /* AzureTranslateRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateRequestData.swift; sourceTree = "<group>"; };
 		8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateResponse.swift; sourceTree = "<group>"; };
 		8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureLanguageResponse.swift; sourceTree = "<group>"; };
+		8C2E357F2554426900CCF841 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		8C7C51992552DB0200AAFDD3 /* RootInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInputModel.swift; sourceTree = "<group>"; };
 		8C7C519A2552DB0200AAFDD3 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		8C7C519B2552DB0200AAFDD3 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				8C0F5ECA2553D611001A29C1 /* APIError.swift */,
 				8C0F5ED62553E661001A29C1 /* APISettings.swift */,
 				8C0F5EE32553EAA6001A29C1 /* URLRequest+Headers.swift */,
+				8C2E357F2554426900CCF841 /* APIService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				8C7C51D92552DF3000AAFDD3 /* HistoryInputModel.swift in Sources */,
 				8C0F5ECF2553D74E001A29C1 /* LanguageAPIService.swift in Sources */,
 				8C7C51A62552DB0200AAFDD3 /* RootAssembly.swift in Sources */,
+				8C2E35802554426900CCF841 /* APIService.swift in Sources */,
 				8C7C51CC2552DF2300AAFDD3 /* TranslateProtocols.swift in Sources */,
 				8C7C51DB2552DF3000AAFDD3 /* HistoryRouter.swift in Sources */,
 				8C7C51B72552DB1600AAFDD3 /* BaseTabBarAssembly.swift in Sources */,

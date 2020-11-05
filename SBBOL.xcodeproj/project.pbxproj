@@ -11,6 +11,16 @@
 		8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C01277125519120001F8447 /* SBBOL.xcdatamodeld */; };
 		8C01277525519120001F8447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C01277425519120001F8447 /* Assets.xcassets */; };
 		8C01277825519120001F8447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C01277625519120001F8447 /* LaunchScreen.storyboard */; };
+		8C0F5ECB2553D611001A29C1 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5ECA2553D611001A29C1 /* APIError.swift */; };
+		8C0F5ECF2553D74E001A29C1 /* LanguageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5ECE2553D74E001A29C1 /* LanguageAPIService.swift */; };
+		8C0F5ED32553D76C001A29C1 /* AzureLanguageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5ED22553D76C001A29C1 /* AzureLanguageAPIService.swift */; };
+		8C0F5ED72553E661001A29C1 /* APISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5ED62553E661001A29C1 /* APISettings.swift */; };
+		8C0F5EDA2553E6BF001A29C1 /* TranslateAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5ED92553E6BF001A29C1 /* TranslateAPIService.swift */; };
+		8C0F5EDE2553E6DD001A29C1 /* AzureTranslateAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EDD2553E6DD001A29C1 /* AzureTranslateAPIService.swift */; };
+		8C0F5EE42553EAA6001A29C1 /* URLRequest+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EE32553EAA6001A29C1 /* URLRequest+Headers.swift */; };
+		8C0F5EE82553EBB9001A29C1 /* AzureTranslateRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EE72553EBB9001A29C1 /* AzureTranslateRequestData.swift */; };
+		8C0F5EEB2553F354001A29C1 /* AzureTranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */; };
+		8C2E357D255435B800CCF841 /* AzureLanguageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */; };
 		8C7C51A12552DB0200AAFDD3 /* RootInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51992552DB0200AAFDD3 /* RootInputModel.swift */; };
 		8C7C51A22552DB0200AAFDD3 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519A2552DB0200AAFDD3 /* RootPresenter.swift */; };
 		8C7C51A32552DB0200AAFDD3 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519B2552DB0200AAFDD3 /* RootRouter.swift */; };
@@ -61,6 +71,16 @@
 		8C01277425519120001F8447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C01277725519120001F8447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C01277925519120001F8447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C0F5ECA2553D611001A29C1 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		8C0F5ECE2553D74E001A29C1 /* LanguageAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageAPIService.swift; sourceTree = "<group>"; };
+		8C0F5ED22553D76C001A29C1 /* AzureLanguageAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureLanguageAPIService.swift; sourceTree = "<group>"; };
+		8C0F5ED62553E661001A29C1 /* APISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISettings.swift; sourceTree = "<group>"; };
+		8C0F5ED92553E6BF001A29C1 /* TranslateAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateAPIService.swift; sourceTree = "<group>"; };
+		8C0F5EDD2553E6DD001A29C1 /* AzureTranslateAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateAPIService.swift; sourceTree = "<group>"; };
+		8C0F5EE32553EAA6001A29C1 /* URLRequest+Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Headers.swift"; sourceTree = "<group>"; };
+		8C0F5EE72553EBB9001A29C1 /* AzureTranslateRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateRequestData.swift; sourceTree = "<group>"; };
+		8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateResponse.swift; sourceTree = "<group>"; };
+		8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureLanguageResponse.swift; sourceTree = "<group>"; };
 		8C7C51992552DB0200AAFDD3 /* RootInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInputModel.swift; sourceTree = "<group>"; };
 		8C7C519A2552DB0200AAFDD3 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		8C7C519B2552DB0200AAFDD3 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
@@ -134,6 +154,7 @@
 		8C01276725519120001F8447 /* SBBOL */ = {
 			isa = PBXGroup;
 			children = (
+				8C0F5EC82553D5D1001A29C1 /* Services */,
 				8C7C51822552D97C00AAFDD3 /* Modules */,
 				8C01276825519120001F8447 /* AppDelegate.swift */,
 				8C01277425519120001F8447 /* Assets.xcassets */,
@@ -142,6 +163,47 @@
 				8C01277125519120001F8447 /* SBBOL.xcdatamodeld */,
 			);
 			path = SBBOL;
+			sourceTree = "<group>";
+		};
+		8C0F5EC82553D5D1001A29C1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8C0F5EC92553D5D7001A29C1 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8C0F5EC92553D5D7001A29C1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8C0F5EDC2553E6C8001A29C1 /* TranslateAPIService */,
+				8C0F5ECD2553D6E2001A29C1 /* LanguageAPIService */,
+				8C0F5ECA2553D611001A29C1 /* APIError.swift */,
+				8C0F5ED62553E661001A29C1 /* APISettings.swift */,
+				8C0F5EE32553EAA6001A29C1 /* URLRequest+Headers.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8C0F5ECD2553D6E2001A29C1 /* LanguageAPIService */ = {
+			isa = PBXGroup;
+			children = (
+				8C0F5ECE2553D74E001A29C1 /* LanguageAPIService.swift */,
+				8C0F5ED22553D76C001A29C1 /* AzureLanguageAPIService.swift */,
+				8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */,
+			);
+			path = LanguageAPIService;
+			sourceTree = "<group>";
+		};
+		8C0F5EDC2553E6C8001A29C1 /* TranslateAPIService */ = {
+			isa = PBXGroup;
+			children = (
+				8C0F5ED92553E6BF001A29C1 /* TranslateAPIService.swift */,
+				8C0F5EDD2553E6DD001A29C1 /* AzureTranslateAPIService.swift */,
+				8C0F5EE72553EBB9001A29C1 /* AzureTranslateRequestData.swift */,
+				8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */,
+			);
+			path = TranslateAPIService;
 			sourceTree = "<group>";
 		};
 		8C7C51822552D97C00AAFDD3 /* Modules */ = {
@@ -315,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C7C51A22552DB0200AAFDD3 /* RootPresenter.swift in Sources */,
+				8C0F5EE42553EAA6001A29C1 /* URLRequest+Headers.swift in Sources */,
 				8C7C51CB2552DF2300AAFDD3 /* TranslateViewController.swift in Sources */,
 				8C7C51B62552DB1600AAFDD3 /* BaseTabBarProtocols.swift in Sources */,
 				8C7C51C82552DF2300AAFDD3 /* TranslateInputModel.swift in Sources */,
@@ -329,13 +392,17 @@
 				8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */,
 				8C7C51A42552DB0200AAFDD3 /* RootViewController.swift in Sources */,
 				8C7C51A72552DB0200AAFDD3 /* RootInteractor.swift in Sources */,
+				8C2E357D255435B800CCF841 /* AzureLanguageResponse.swift in Sources */,
 				8C7C51CA2552DF2300AAFDD3 /* TranslateRouter.swift in Sources */,
 				8C7C51EC2552DF3A00AAFDD3 /* SettingsRouter.swift in Sources */,
 				8C7C51D92552DF3000AAFDD3 /* HistoryInputModel.swift in Sources */,
+				8C0F5ECF2553D74E001A29C1 /* LanguageAPIService.swift in Sources */,
 				8C7C51A62552DB0200AAFDD3 /* RootAssembly.swift in Sources */,
 				8C7C51CC2552DF2300AAFDD3 /* TranslateProtocols.swift in Sources */,
 				8C7C51DB2552DF3000AAFDD3 /* HistoryRouter.swift in Sources */,
 				8C7C51B72552DB1600AAFDD3 /* BaseTabBarAssembly.swift in Sources */,
+				8C0F5EE82553EBB9001A29C1 /* AzureTranslateRequestData.swift in Sources */,
+				8C0F5ED32553D76C001A29C1 /* AzureLanguageAPIService.swift in Sources */,
 				8C7C51DE2552DF3000AAFDD3 /* HistoryAssembly.swift in Sources */,
 				8C7C51CD2552DF2300AAFDD3 /* TranslateAssembly.swift in Sources */,
 				8C7C51EA2552DF3A00AAFDD3 /* SettingsInputModel.swift in Sources */,
@@ -343,15 +410,20 @@
 				8C7C51F02552DF3A00AAFDD3 /* SettingsInteractor.swift in Sources */,
 				8C7C51FB2552E62F00AAFDD3 /* BaseTabBarViewController.swift in Sources */,
 				8C7C51A32552DB0200AAFDD3 /* RootRouter.swift in Sources */,
+				8C0F5EEB2553F354001A29C1 /* AzureTranslateResponse.swift in Sources */,
 				8C7C51CE2552DF2300AAFDD3 /* TranslateInteractor.swift in Sources */,
 				8C7C51EB2552DF3A00AAFDD3 /* SettingsPresenter.swift in Sources */,
 				8C7C51F52552E05A00AAFDD3 /* TabAssembly.swift in Sources */,
 				8C7C51ED2552DF3A00AAFDD3 /* SettingsViewController.swift in Sources */,
+				8C0F5ED72553E661001A29C1 /* APISettings.swift in Sources */,
 				8C01276925519120001F8447 /* AppDelegate.swift in Sources */,
+				8C0F5EDE2553E6DD001A29C1 /* AzureTranslateAPIService.swift in Sources */,
+				8C0F5EDA2553E6BF001A29C1 /* TranslateAPIService.swift in Sources */,
 				8C7C51DF2552DF3000AAFDD3 /* HistoryInteractor.swift in Sources */,
 				8C7C51A52552DB0200AAFDD3 /* RootProtocols.swift in Sources */,
 				8C7C51EF2552DF3A00AAFDD3 /* SettingsAssembly.swift in Sources */,
 				8C7C51B82552DB1600AAFDD3 /* BaseTabBarInteractor.swift in Sources */,
+				8C0F5ECB2553D611001A29C1 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

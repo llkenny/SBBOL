@@ -21,8 +21,8 @@ class APIService {
     /// Perform request
     /// - Parameters:
     ///   - httpMethod: HTTP method
-    ///   - httpBody: HTTP body
-    ///   - auth: Is authorization required
+    ///   - httpBody: Request body
+    ///   - headers: Request headers
     ///   - queryItems: Query items
     ///   - completion: Result with Decodable value or error
     func perform<T>(httpMethod: String = "GET",

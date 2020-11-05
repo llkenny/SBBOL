@@ -17,7 +17,6 @@
 		8C0F5ED72553E661001A29C1 /* APISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5ED62553E661001A29C1 /* APISettings.swift */; };
 		8C0F5EDA2553E6BF001A29C1 /* TranslateAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5ED92553E6BF001A29C1 /* TranslateAPIService.swift */; };
 		8C0F5EDE2553E6DD001A29C1 /* AzureTranslateAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EDD2553E6DD001A29C1 /* AzureTranslateAPIService.swift */; };
-		8C0F5EE42553EAA6001A29C1 /* URLRequest+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EE32553EAA6001A29C1 /* URLRequest+Headers.swift */; };
 		8C0F5EE82553EBB9001A29C1 /* AzureTranslateRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EE72553EBB9001A29C1 /* AzureTranslateRequestData.swift */; };
 		8C0F5EEB2553F354001A29C1 /* AzureTranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */; };
 		8C2E357D255435B800CCF841 /* AzureLanguageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */; };
@@ -78,7 +77,6 @@
 		8C0F5ED62553E661001A29C1 /* APISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISettings.swift; sourceTree = "<group>"; };
 		8C0F5ED92553E6BF001A29C1 /* TranslateAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateAPIService.swift; sourceTree = "<group>"; };
 		8C0F5EDD2553E6DD001A29C1 /* AzureTranslateAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateAPIService.swift; sourceTree = "<group>"; };
-		8C0F5EE32553EAA6001A29C1 /* URLRequest+Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Headers.swift"; sourceTree = "<group>"; };
 		8C0F5EE72553EBB9001A29C1 /* AzureTranslateRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateRequestData.swift; sourceTree = "<group>"; };
 		8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateResponse.swift; sourceTree = "<group>"; };
 		8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureLanguageResponse.swift; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				8C0F5ECD2553D6E2001A29C1 /* LanguageAPIService */,
 				8C0F5ECA2553D611001A29C1 /* APIError.swift */,
 				8C0F5ED62553E661001A29C1 /* APISettings.swift */,
-				8C0F5EE32553EAA6001A29C1 /* URLRequest+Headers.swift */,
 				8C2E357F2554426900CCF841 /* APIService.swift */,
 			);
 			path = API;
@@ -380,7 +377,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C7C51A22552DB0200AAFDD3 /* RootPresenter.swift in Sources */,
-				8C0F5EE42553EAA6001A29C1 /* URLRequest+Headers.swift in Sources */,
 				8C7C51CB2552DF2300AAFDD3 /* TranslateViewController.swift in Sources */,
 				8C7C51B62552DB1600AAFDD3 /* BaseTabBarProtocols.swift in Sources */,
 				8C7C51C82552DF2300AAFDD3 /* TranslateInputModel.swift in Sources */,

@@ -20,6 +20,8 @@ final class AzureLanguageAPIService: APIService, LanguageAPIService {
         let queryItems = [URLQueryItem(name: "scope", value: "translation"),
                           URLQueryItem(name: "api-version", value: "3.0")]
 
-        perform(queryItems: queryItems, completion: completion)
+        let headers = ["Content-Type": "application/json"]
+
+        perform(headers: headers, queryItems: queryItems, completion: completion)
     }
 }

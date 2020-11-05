@@ -27,7 +27,7 @@ class APIService {
     ///   - completion: Result with Decodable value or error
     func perform<T>(httpMethod: String = "GET",
                     httpBody: Data? = nil,
-                    auth: Bool = false,
+                    headers: [String: String?] = [:],
                     queryItems: [URLQueryItem] = [],
                     completion: @escaping (Result<T, Error>) -> Void) where T: Decodable {
         var components = URLComponents(string: path)
@@ -39,8 +39,10 @@ class APIService {
 
         var request = URLRequest(url: url)
         request.httpMethod = httpMethod
-        request.setDefaultAzureHeaders(auth: auth)
         request.httpBody = httpBody
+        headers.forEach { (key: String, value: String?) in
+            request.setValue(value, forHTTPHeaderField: key)
+        }
 
         session.dataTask(with: request) { (data, response, error) in
             guard error == nil else {

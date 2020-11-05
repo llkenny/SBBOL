@@ -23,10 +23,13 @@ final class AzureTranslateAPIService: APIService, TranslateAPIService {
         let queryItems = [URLQueryItem(name: "to", value: to),
                           URLQueryItem(name: "api-version", value: "3.0")]
 
+        let headers = ["Content-Type": "application/json",
+                       "Ocp-Apim-Subscription-Key": APISettings.azureTranslateToken]
+
         let requestData = AzureTranslateRequestData(text: text)
         do {
             let httpBody = try JSONEncoder().encode([requestData]) // array not single element
-            perform(httpMethod: "POST", httpBody: httpBody, auth: true, queryItems: queryItems, completion: completion)
+            perform(httpMethod: "POST", httpBody: httpBody, headers: headers, queryItems: queryItems, completion: completion)
         } catch {
             completion(.failure(APIError.encoding))
             return

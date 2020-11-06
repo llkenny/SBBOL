@@ -34,4 +34,24 @@ extension TranslatePresenter: TranslateModule {
 }
 
 extension TranslatePresenter: TranslateViewToPresenter {
+
+    func didEnter(text: String?) {
+        guard let text = text, !text.isEmpty else {
+            contentViewController?.showTranslation(text: "")
+            return
+        }
+        // TODO: activity indicator
+        // TODO: Provide to
+        interactor?.translate(text: text, to: "es") { result in
+            switch result {
+            case .success(let response):
+                // TODO: Provide error if doesn't exist
+                let translation = response.first?.translations.first?.text ?? ""
+                self.contentViewController?.showTranslation(text: translation)
+            case .failure(let error):
+                // TODO: Show error
+                debugPrint(error)
+            }
+        }
+    }
 }

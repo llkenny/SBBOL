@@ -21,15 +21,12 @@ final class TranslateInteractor {
 
     init(model: TranslateInputModel) {
         self.model = model
-        translate(text: "Hello, what is your name?", to: "es") { result in
-            debugPrint(result)
-        }
-        fetch { result in
-            debugPrint(result)
-        }
     }
 
     // MARK: - Functions
+}
+
+extension TranslateInteractor: TranslatePresenterToInteractor {
 
     func translate(text: String, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void) {
         translateAPIService.translate(text: text, to: to, completion: completion)
@@ -38,7 +35,4 @@ final class TranslateInteractor {
     func fetch(completion: @escaping (Result<AzureLanguageResponse, Error>) -> Void) {
         languageAPIService.fetch(completion: completion)
     }
-}
-
-extension TranslateInteractor: TranslatePresenterToInteractor {
 }

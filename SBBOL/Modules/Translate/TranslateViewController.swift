@@ -13,6 +13,9 @@ final class TranslateViewController: UIViewController {
 
     // MARK: - Properties
 
+    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var outputLabel: UILabel!
+
     weak var presenter: TranslateViewToPresenter?
 
     // MARK: - View life cycle
@@ -20,6 +23,7 @@ final class TranslateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         localize()
+        inputTextField.delegate = self
     }
 
     // MARK: - IBActions
@@ -33,7 +37,20 @@ final class TranslateViewController: UIViewController {
 }
 
 extension TranslateViewController: TranslatePresenterToView {
+
+    func showTranslation(text: String) {
+        outputLabel.text = text
+    }
 }
 
 extension TranslateViewController: TranslateControllerToRouter {
+}
+
+extension TranslateViewController: UITextFieldDelegate {
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        presenter?.didEnter(text: textField.text)
+        return true
+    }
 }

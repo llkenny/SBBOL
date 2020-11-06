@@ -40,9 +40,10 @@ extension TranslatePresenter: TranslateViewToPresenter {
             contentViewController?.showTranslation(text: "")
             return
         }
-        // TODO: activity indicator
+        contentViewController?.update(isLoading: true)
         // TODO: Provide to
         interactor?.translate(text: text, to: "es") { result in
+            self.contentViewController?.update(isLoading: false)
             switch result {
             case .success(let response):
                 // TODO: Provide error if doesn't exist

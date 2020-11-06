@@ -15,6 +15,8 @@ final class TranslateViewController: UIViewController {
 
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     weak var presenter: TranslateViewToPresenter?
 
@@ -40,6 +42,11 @@ extension TranslateViewController: TranslatePresenterToView {
 
     func showTranslation(text: String) {
         outputLabel.text = text
+    }
+
+    func update(isLoading: Bool) {
+        loadingView.isHidden = !isLoading
+        isLoading ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
     }
 }
 

@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TranslateViewController" customModule="SBBOL" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="zpZ-3c-ZXf" id="zSP-NC-0YN"/>
                 <outlet property="inputTextField" destination="bRO-3o-4of" id="M2S-Jb-I3d"/>
+                <outlet property="loadingView" destination="LWW-ou-tmn" id="NUV-8d-HzS"/>
                 <outlet property="outputLabel" destination="Cqo-jH-RcQ" id="K0r-rJ-OTU"/>
                 <outlet property="view" destination="iN0-l3-epB" id="El4-yq-zxD"/>
             </connections>
@@ -114,14 +116,32 @@
                         <constraint firstItem="fMI-0m-2QZ" firstAttribute="width" secondItem="795-nD-8EV" secondAttribute="width" id="YU9-Fq-l1A"/>
                     </constraints>
                 </stackView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWW-ou-tmn" userLabel="Loading View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zpZ-3c-ZXf">
+                            <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            <color key="color" systemColor="systemYellowColor"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="zpZ-3c-ZXf" firstAttribute="centerY" secondItem="LWW-ou-tmn" secondAttribute="centerY" id="0RO-K8-aX8"/>
+                        <constraint firstItem="zpZ-3c-ZXf" firstAttribute="centerX" secondItem="LWW-ou-tmn" secondAttribute="centerX" id="VgA-Hm-ug8"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemYellowColor"/>
             <constraints>
+                <constraint firstItem="LWW-ou-tmn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="81l-1j-bkk"/>
                 <constraint firstItem="795-nD-8EV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="8Ex-hm-1q7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LWW-ou-tmn" secondAttribute="trailing" id="D2J-ZA-zyE"/>
+                <constraint firstAttribute="bottom" secondItem="LWW-ou-tmn" secondAttribute="bottom" id="EHh-67-GnP"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="795-nD-8EV" secondAttribute="bottom" constant="8" id="Jx3-tY-ycz"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="795-nD-8EV" secondAttribute="trailing" constant="8" id="Mba-vJ-xgh"/>
                 <constraint firstItem="795-nD-8EV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="TEJ-4W-xXG"/>
+                <constraint firstItem="LWW-ou-tmn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="h1D-Ml-09F"/>
             </constraints>
             <point key="canvasLocation" x="139" y="153"/>
         </view>

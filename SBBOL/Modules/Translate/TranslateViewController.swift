@@ -57,11 +57,6 @@ extension TranslateViewController: TranslatePresenterToView {
     func showTranslation(text: String) {
         outputLabel.text = text
     }
-
-    func update(isLoading: Bool) {
-        loadingView.isHidden = !isLoading
-        isLoading ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
-    }
 }
 
 extension TranslateViewController: TranslateControllerToRouter {
@@ -79,3 +74,5 @@ extension TranslateViewController: UITextFieldDelegate {
         return true
     }
 }
+
+extension TranslateViewController: AbleToShowActivityIndicator {}

@@ -12,6 +12,9 @@ final class RootViewController: UIViewController {
     // MARK: - Constants
 
     // MARK: - Properties
+    @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var loadingLabel: UILabel!
 
     weak var presenter: RootViewToPresenter?
     private weak var current: UIViewController?
@@ -30,6 +33,7 @@ final class RootViewController: UIViewController {
     // MARK: - Private functions
 
     private func localize() {
+        loadingLabel.text = "Loading resources...\nPlease wait"
     }
 
     private func dismissCurrent() {
@@ -56,3 +60,6 @@ extension RootViewController: RootControllerToRouter {
         current = viewController
     }
 }
+
+extension RootViewController: AbleToShowError {}
+extension RootViewController: AbleToShowActivityIndicator {}

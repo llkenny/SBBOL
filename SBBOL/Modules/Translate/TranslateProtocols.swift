@@ -21,10 +21,9 @@ protocol TranslateViewToPresenter: class { // View calls, Presenter listens.
     func destinationButtonTap()
 }
 
-protocol TranslatePresenterToView: class {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
+protocol TranslatePresenterToView: class, AbleToShowActivityIndicator {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
 
     func showTranslation(text: String)
-    func update(isLoading: Bool)
 }
 
 protocol TranslatePresenterToRouter: class {   // Presenter calls, Router listens.
@@ -40,5 +39,4 @@ protocol TranslateControllerToRouter: class {
 protocol TranslatePresenterToInteractor: class {   // Presenter calls, Interactor listens.
 
     func translate(text: String, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void)
-    func fetch(completion: @escaping (Result<AzureLanguageResponse, Error>) -> Void)
 }

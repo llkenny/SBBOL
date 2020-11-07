@@ -12,6 +12,7 @@ final class RootInteractor {
     // MARK: - Constants
 
     private let model: RootInputModel
+    private let languageAPIService: LanguageAPIService = AzureLanguageAPIService()
 
     // MARK: - Construction
 
@@ -23,4 +24,8 @@ final class RootInteractor {
 }
 
 extension RootInteractor: RootPresenterToInteractor {
+
+    func fetchLanguages(completion: @escaping (Result<AzureLanguageResponse, Error>) -> Void) {
+        languageAPIService.fetch(completion: completion)
+    }
 }

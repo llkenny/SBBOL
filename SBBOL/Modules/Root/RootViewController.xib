@@ -5,11 +5,15 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="SBBOL" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="gpE-7R-Z4F" id="xd9-Kn-HqT"/>
+                <outlet property="loadingLabel" destination="UiG-IB-V5j" id="otF-gC-e1b"/>
+                <outlet property="loadingView" destination="TEb-nz-JUs" id="NN6-xc-SOw"/>
                 <outlet property="view" destination="iN0-l3-epB" id="K1f-F7-HJr"/>
             </connections>
         </placeholder>
@@ -17,9 +21,45 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEb-nz-JUs" userLabel="Loading View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiG-IB-V5j">
+                            <rect key="frame" x="16" y="385" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gpE-7R-Z4F">
+                            <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            <color key="color" systemColor="systemYellowColor"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="gpE-7R-Z4F" firstAttribute="top" secondItem="UiG-IB-V5j" secondAttribute="bottom" constant="24" id="Ruq-3o-pnW"/>
+                        <constraint firstItem="gpE-7R-Z4F" firstAttribute="centerY" secondItem="TEb-nz-JUs" secondAttribute="centerY" id="cb2-NT-46L"/>
+                        <constraint firstAttribute="trailing" secondItem="UiG-IB-V5j" secondAttribute="trailing" constant="16" id="gqk-RF-3aR"/>
+                        <constraint firstItem="UiG-IB-V5j" firstAttribute="leading" secondItem="TEb-nz-JUs" secondAttribute="leading" constant="16" id="wpI-ha-ODE"/>
+                        <constraint firstItem="gpE-7R-Z4F" firstAttribute="centerX" secondItem="TEb-nz-JUs" secondAttribute="centerX" id="yxf-6e-CeV"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TEb-nz-JUs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2Y1-tv-KFk"/>
+                <constraint firstItem="TEb-nz-JUs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4mN-62-mIB"/>
+                <constraint firstAttribute="bottom" secondItem="TEb-nz-JUs" secondAttribute="bottom" id="ExU-ua-Ix2"/>
+                <constraint firstItem="TEb-nz-JUs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="QNR-32-mT5"/>
+            </constraints>
             <point key="canvasLocation" x="139" y="153"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

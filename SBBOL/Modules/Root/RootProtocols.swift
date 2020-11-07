@@ -16,7 +16,7 @@ protocol RootDelegate: class { // Delegate protocol.
 protocol RootViewToPresenter: class { // View calls, Presenter listens.
 }
 
-protocol RootPresenterToView: class {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
+protocol RootPresenterToView: class, AbleToShowError, AbleToShowActivityIndicator {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
 }
 
 protocol RootPresenterToRouter: class {   // Presenter calls, Router listens.
@@ -30,4 +30,6 @@ protocol RootControllerToRouter: class {
 }
 
 protocol RootPresenterToInteractor: class {   // Presenter calls, Interactor listens.
+
+    func fetchLanguages(completion: @escaping (Result<AzureLanguageResponse, Error>) -> Void)
 }

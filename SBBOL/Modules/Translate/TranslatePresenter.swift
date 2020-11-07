@@ -31,9 +31,30 @@ final class TranslatePresenter {
 }
 
 extension TranslatePresenter: TranslateModule {
+
+    func didSelect(language: AzureLanguageResponse.Language) {
+        // TODO:
+        debugPrint(language)
+    }
+
+    func close(controller: LanguageSelectorViewController) {
+        controller.dismiss(animated: true)
+    }
 }
 
 extension TranslatePresenter: TranslateViewToPresenter {
+
+    func sourceButtonTap() {
+        router?.navigate(to: .languageSelector(type: .source), completion: nil)
+    }
+
+    func swapButtonTap() {
+        // TODO: Swap languages
+    }
+
+    func destinationButtonTap() {
+        router?.navigate(to: .languageSelector(type: .destination), completion: nil)
+    }
 
     func didEnter(text: String?) {
         guard let text = text, !text.isEmpty else {

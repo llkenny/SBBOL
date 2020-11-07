@@ -17,6 +17,8 @@ final class TranslateViewController: UIViewController {
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var sourceButton: UIButton!
+    @IBOutlet weak var destinationButton: UIButton!
 
     weak var presenter: TranslateViewToPresenter?
 
@@ -29,6 +31,18 @@ final class TranslateViewController: UIViewController {
     }
 
     // MARK: - IBActions
+
+    @IBAction func sourceButtonTap(_ sender: Any) {
+        presenter?.sourceButtonTap()
+    }
+
+    @IBAction func swapButtonTap(_ sender: Any) {
+        presenter?.swapButtonTap()
+    }
+
+    @IBAction func destinationButtonTap(_ sender: Any) {
+        presenter?.destinationButtonTap()
+    }
 
     // MARK: - Functions
 
@@ -51,6 +65,10 @@ extension TranslateViewController: TranslatePresenterToView {
 }
 
 extension TranslateViewController: TranslateControllerToRouter {
+
+    func present(controller: LanguageSelectorViewController) {
+        present(controller, animated: true)
+    }
 }
 
 extension TranslateViewController: UITextFieldDelegate {

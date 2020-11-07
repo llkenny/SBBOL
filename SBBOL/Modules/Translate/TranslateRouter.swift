@@ -7,9 +7,14 @@
 
 import Foundation
 
+enum LanguageSelectorType {
+
+    case source, destination
+}
+
 enum TranslateNavigation {
-    case
-    none
+
+    case languageSelector(type: LanguageSelectorType)
 }
 
 typealias TranslateRouterClosure = (() -> Void)
@@ -19,6 +24,8 @@ final class TranslateRouter {
     // MARK: - Properties
 
     private weak var contentViewController: TranslateControllerToRouter?
+    private(set) var languageSelectorAssembly: LanguageSelectorAssembly?
+    unowned var module: TranslateModule!
 
     // MARK: - Construction
 
@@ -27,14 +34,21 @@ final class TranslateRouter {
     }
 
     // MARK: - Functions
+
+    func presentLanguageSelector(type: LanguageSelectorType) {
+        // TODO: Set type
+        let languageSelectorAssembly = LanguageSelectorAssembly(inputModel: LanguageSelectorInputModel(), delegate: module)
+        contentViewController?.present(controller: languageSelectorAssembly.contentViewController)
+        self.languageSelectorAssembly = languageSelectorAssembly
+    }
 }
 
 extension TranslateRouter: TranslatePresenterToRouter {
 
     func navigate(to destination: TranslateNavigation, completion: TranslateRouterClosure? = nil) {
         switch destination {
-        case .none:
-            break
+        case .languageSelector(let type):
+            presentLanguageSelector(type: type)
         }
     }
 }

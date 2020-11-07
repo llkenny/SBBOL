@@ -12,9 +12,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TranslateViewController" customModule="SBBOL" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="zpZ-3c-ZXf" id="zSP-NC-0YN"/>
+                <outlet property="destinationButton" destination="LRV-6h-Atj" id="eCO-oa-6hA"/>
                 <outlet property="inputTextField" destination="bRO-3o-4of" id="M2S-Jb-I3d"/>
                 <outlet property="loadingView" destination="LWW-ou-tmn" id="NUV-8d-HzS"/>
                 <outlet property="outputLabel" destination="Cqo-jH-RcQ" id="K0r-rJ-OTU"/>
+                <outlet property="sourceButton" destination="Sii-4j-eOY" id="AiT-6w-7jn"/>
                 <outlet property="view" destination="iN0-l3-epB" id="El4-yq-zxD"/>
             </connections>
         </placeholder>
@@ -29,20 +31,29 @@
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sr3-3c-jkf">
                             <rect key="frame" x="131" y="0.0" width="136.5" height="44"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sii-4j-eOY">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sii-4j-eOY" userLabel="Source Button">
                                     <rect key="frame" x="0.0" y="0.0" width="46" height="44"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="sourceButtonTap:" destination="-1" eventType="touchUpInside" id="fNw-qE-4jf"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvY-WM-hD6">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AvY-WM-hD6" userLabel="Swap Button">
                                     <rect key="frame" x="58" y="0.0" width="20.5" height="44"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" image="arrow.left.and.right" catalog="system"/>
+                                    <connections>
+                                        <action selector="swapButtonTap:" destination="-1" eventType="touchUpInside" id="4q2-wB-aQD"/>
+                                    </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRV-6h-Atj">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRV-6h-Atj" userLabel="Destination Button">
                                     <rect key="frame" x="90.5" y="0.0" width="46" height="44"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="destinationButtonTap:" destination="-1" eventType="touchUpInside" id="Im3-Qr-lXN"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,7 +74,7 @@
                                         </textField>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tc-N6-zo9" userLabel="Empty View">
                                             <rect key="frame" x="0.0" y="37" width="382" height="112.5"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GH-kW-qit" userLabel="Separator View">
                                             <rect key="frame" x="0.0" y="165.5" width="382" height="1"/>
@@ -90,7 +101,7 @@
                                         </label>
                                         <view contentMode="scaleToFill" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nog-hG-6BO" userLabel="Empty View">
                                             <rect key="frame" x="0.0" y="198.5" width="382" height="535.5"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -148,9 +159,6 @@
     </objects>
     <resources>
         <image name="arrow.left.and.right" catalog="system" width="128" height="78"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

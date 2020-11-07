@@ -21,6 +21,16 @@
 		8C0F5EEB2553F354001A29C1 /* AzureTranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */; };
 		8C2E357D255435B800CCF841 /* AzureLanguageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */; };
 		8C2E35802554426900CCF841 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357F2554426900CCF841 /* APIService.swift */; };
+		8C756E332555BDAB006CD5A9 /* LanguageSelectorInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E2B2555BDAB006CD5A9 /* LanguageSelectorInputModel.swift */; };
+		8C756E342555BDAB006CD5A9 /* LanguageSelectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E2C2555BDAB006CD5A9 /* LanguageSelectorPresenter.swift */; };
+		8C756E352555BDAB006CD5A9 /* LanguageSelectorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E2D2555BDAB006CD5A9 /* LanguageSelectorRouter.swift */; };
+		8C756E362555BDAB006CD5A9 /* LanguageSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E2E2555BDAB006CD5A9 /* LanguageSelectorViewController.swift */; };
+		8C756E372555BDAB006CD5A9 /* LanguageSelectorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E2F2555BDAB006CD5A9 /* LanguageSelectorProtocols.swift */; };
+		8C756E382555BDAB006CD5A9 /* LanguageSelectorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E302555BDAB006CD5A9 /* LanguageSelectorAssembly.swift */; };
+		8C756E392555BDAB006CD5A9 /* LanguageSelectorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E312555BDAB006CD5A9 /* LanguageSelectorInteractor.swift */; };
+		8C756E3A2555BDAB006CD5A9 /* LanguageSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C756E322555BDAB006CD5A9 /* LanguageSelectorViewController.xib */; };
+		8C756E3F2555BEFD006CD5A9 /* LanguageSelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E3D2555BEFD006CD5A9 /* LanguageSelectorTableViewCell.swift */; };
+		8C756E402555BEFD006CD5A9 /* LanguageSelectorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C756E3E2555BEFD006CD5A9 /* LanguageSelectorTableViewCell.xib */; };
 		8C7C51A12552DB0200AAFDD3 /* RootInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51992552DB0200AAFDD3 /* RootInputModel.swift */; };
 		8C7C51A22552DB0200AAFDD3 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519A2552DB0200AAFDD3 /* RootPresenter.swift */; };
 		8C7C51A32552DB0200AAFDD3 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C519B2552DB0200AAFDD3 /* RootRouter.swift */; };
@@ -81,6 +91,16 @@
 		8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateResponse.swift; sourceTree = "<group>"; };
 		8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureLanguageResponse.swift; sourceTree = "<group>"; };
 		8C2E357F2554426900CCF841 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8C756E2B2555BDAB006CD5A9 /* LanguageSelectorInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorInputModel.swift; sourceTree = "<group>"; };
+		8C756E2C2555BDAB006CD5A9 /* LanguageSelectorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorPresenter.swift; sourceTree = "<group>"; };
+		8C756E2D2555BDAB006CD5A9 /* LanguageSelectorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorRouter.swift; sourceTree = "<group>"; };
+		8C756E2E2555BDAB006CD5A9 /* LanguageSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorViewController.swift; sourceTree = "<group>"; };
+		8C756E2F2555BDAB006CD5A9 /* LanguageSelectorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorProtocols.swift; sourceTree = "<group>"; };
+		8C756E302555BDAB006CD5A9 /* LanguageSelectorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorAssembly.swift; sourceTree = "<group>"; };
+		8C756E312555BDAB006CD5A9 /* LanguageSelectorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorInteractor.swift; sourceTree = "<group>"; };
+		8C756E322555BDAB006CD5A9 /* LanguageSelectorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageSelectorViewController.xib; sourceTree = "<group>"; };
+		8C756E3D2555BEFD006CD5A9 /* LanguageSelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorTableViewCell.swift; sourceTree = "<group>"; };
+		8C756E3E2555BEFD006CD5A9 /* LanguageSelectorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageSelectorTableViewCell.xib; sourceTree = "<group>"; };
 		8C7C51992552DB0200AAFDD3 /* RootInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInputModel.swift; sourceTree = "<group>"; };
 		8C7C519A2552DB0200AAFDD3 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		8C7C519B2552DB0200AAFDD3 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
@@ -206,6 +226,31 @@
 			path = TranslateAPIService;
 			sourceTree = "<group>";
 		};
+		8C756E2A2555BD88006CD5A9 /* LanguageSelector */ = {
+			isa = PBXGroup;
+			children = (
+				8C756E3C2555BED7006CD5A9 /* Cells */,
+				8C756E2B2555BDAB006CD5A9 /* LanguageSelectorInputModel.swift */,
+				8C756E2C2555BDAB006CD5A9 /* LanguageSelectorPresenter.swift */,
+				8C756E2D2555BDAB006CD5A9 /* LanguageSelectorRouter.swift */,
+				8C756E2E2555BDAB006CD5A9 /* LanguageSelectorViewController.swift */,
+				8C756E2F2555BDAB006CD5A9 /* LanguageSelectorProtocols.swift */,
+				8C756E302555BDAB006CD5A9 /* LanguageSelectorAssembly.swift */,
+				8C756E312555BDAB006CD5A9 /* LanguageSelectorInteractor.swift */,
+				8C756E322555BDAB006CD5A9 /* LanguageSelectorViewController.xib */,
+			);
+			path = LanguageSelector;
+			sourceTree = "<group>";
+		};
+		8C756E3C2555BED7006CD5A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C756E3D2555BEFD006CD5A9 /* LanguageSelectorTableViewCell.swift */,
+				8C756E3E2555BEFD006CD5A9 /* LanguageSelectorTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		8C7C51822552D97C00AAFDD3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +259,7 @@
 				8C7C51BD2552DEEC00AAFDD3 /* Translate */,
 				8C7C51BE2552DF0600AAFDD3 /* History */,
 				8C7C51BF2552DF1000AAFDD3 /* Settings */,
+				8C756E2A2555BD88006CD5A9 /* LanguageSelector */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -359,9 +405,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C756E402555BEFD006CD5A9 /* LanguageSelectorTableViewCell.xib in Resources */,
 				8C7C51FC2552E62F00AAFDD3 /* BaseTabBarViewController.xib in Resources */,
 				8C01277825519120001F8447 /* LaunchScreen.storyboard in Resources */,
 				8C01277525519120001F8447 /* Assets.xcassets in Resources */,
+				8C756E3A2555BDAB006CD5A9 /* LanguageSelectorViewController.xib in Resources */,
 				8C7C51A82552DB0200AAFDD3 /* RootViewController.xib in Resources */,
 				8C7C51CF2552DF2300AAFDD3 /* TranslateViewController.xib in Resources */,
 				8C7C51F12552DF3A00AAFDD3 /* SettingsViewController.xib in Resources */,
@@ -383,6 +431,7 @@
 				8C7C51B22552DB1600AAFDD3 /* BaseTabBarInputModel.swift in Sources */,
 				8C7C51DA2552DF3000AAFDD3 /* HistoryPresenter.swift in Sources */,
 				8C7C51DC2552DF3000AAFDD3 /* HistoryViewController.swift in Sources */,
+				8C756E332555BDAB006CD5A9 /* LanguageSelectorInputModel.swift in Sources */,
 				8C7C51A12552DB0200AAFDD3 /* RootInputModel.swift in Sources */,
 				8C7C51DD2552DF3000AAFDD3 /* HistoryProtocols.swift in Sources */,
 				8C7C51EE2552DF3A00AAFDD3 /* SettingsProtocols.swift in Sources */,
@@ -391,16 +440,22 @@
 				8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */,
 				8C7C51A42552DB0200AAFDD3 /* RootViewController.swift in Sources */,
 				8C7C51A72552DB0200AAFDD3 /* RootInteractor.swift in Sources */,
+				8C756E382555BDAB006CD5A9 /* LanguageSelectorAssembly.swift in Sources */,
 				8C2E357D255435B800CCF841 /* AzureLanguageResponse.swift in Sources */,
 				8C7C51CA2552DF2300AAFDD3 /* TranslateRouter.swift in Sources */,
 				8C7C51EC2552DF3A00AAFDD3 /* SettingsRouter.swift in Sources */,
+				8C756E342555BDAB006CD5A9 /* LanguageSelectorPresenter.swift in Sources */,
 				8C7C51D92552DF3000AAFDD3 /* HistoryInputModel.swift in Sources */,
+				8C756E3F2555BEFD006CD5A9 /* LanguageSelectorTableViewCell.swift in Sources */,
 				8C0F5ECF2553D74E001A29C1 /* LanguageAPIService.swift in Sources */,
 				8C7C51A62552DB0200AAFDD3 /* RootAssembly.swift in Sources */,
+				8C756E392555BDAB006CD5A9 /* LanguageSelectorInteractor.swift in Sources */,
 				8C2E35802554426900CCF841 /* APIService.swift in Sources */,
+				8C756E372555BDAB006CD5A9 /* LanguageSelectorProtocols.swift in Sources */,
 				8C7C51CC2552DF2300AAFDD3 /* TranslateProtocols.swift in Sources */,
 				8C7C51DB2552DF3000AAFDD3 /* HistoryRouter.swift in Sources */,
 				8C7C51B72552DB1600AAFDD3 /* BaseTabBarAssembly.swift in Sources */,
+				8C756E362555BDAB006CD5A9 /* LanguageSelectorViewController.swift in Sources */,
 				8C0F5EE82553EBB9001A29C1 /* AzureTranslateRequestData.swift in Sources */,
 				8C0F5ED32553D76C001A29C1 /* AzureLanguageAPIService.swift in Sources */,
 				8C7C51DE2552DF3000AAFDD3 /* HistoryAssembly.swift in Sources */,
@@ -421,6 +476,7 @@
 				8C0F5EDA2553E6BF001A29C1 /* TranslateAPIService.swift in Sources */,
 				8C7C51DF2552DF3000AAFDD3 /* HistoryInteractor.swift in Sources */,
 				8C7C51A52552DB0200AAFDD3 /* RootProtocols.swift in Sources */,
+				8C756E352555BDAB006CD5A9 /* LanguageSelectorRouter.swift in Sources */,
 				8C7C51EF2552DF3A00AAFDD3 /* SettingsAssembly.swift in Sources */,
 				8C7C51B82552DB1600AAFDD3 /* BaseTabBarInteractor.swift in Sources */,
 				8C0F5ECB2553D611001A29C1 /* APIError.swift in Sources */,

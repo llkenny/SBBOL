@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol TranslateModule: class { // Module protocol.
+protocol TranslateModule: LanguageSelectorDelegate { // Module protocol.
 }
 
 protocol TranslateDelegate: class { // Delegate protocol.
@@ -16,6 +16,9 @@ protocol TranslateDelegate: class { // Delegate protocol.
 protocol TranslateViewToPresenter: class { // View calls, Presenter listens.
 
     func didEnter(text: String?)
+    func sourceButtonTap()
+    func swapButtonTap()
+    func destinationButtonTap()
 }
 
 protocol TranslatePresenterToView: class {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
@@ -30,6 +33,8 @@ protocol TranslatePresenterToRouter: class {   // Presenter calls, Router listen
 }
 
 protocol TranslateControllerToRouter: class {
+
+    func present(controller: LanguageSelectorViewController)
 }
 
 protocol TranslatePresenterToInteractor: class {   // Presenter calls, Interactor listens.

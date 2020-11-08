@@ -15,13 +15,16 @@ protocol TranslateDelegate: class { // Delegate protocol.
 
 protocol TranslateViewToPresenter: class { // View calls, Presenter listens.
 
-    func didEnter(text: String?)
+    func didEnterText()
     func sourceButtonTap()
     func swapButtonTap()
     func destinationButtonTap()
 }
 
 protocol TranslatePresenterToView: class, AbleToShowActivityIndicator {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
+
+    var currentText: String? { get set }
+    var currentTranslation: String? { get }
 
     func showTranslation(text: String)
     func change(language: Language, for type: LanguageSelectorType)

@@ -54,6 +54,18 @@ final class TranslateViewController: UIViewController {
 
 extension TranslateViewController: TranslatePresenterToView {
 
+    var currentText: String? {
+        get {
+            return inputTextField.text
+        } set {
+            inputTextField.text = newValue
+        }
+    }
+
+    var currentTranslation: String? {
+        return outputLabel.text
+    }
+
     func showTranslation(text: String) {
         outputLabel.text = text
     }
@@ -67,7 +79,6 @@ extension TranslateViewController: TranslatePresenterToView {
             button = destinationButton
         }
         button.setTitle(language.name, for: .normal)
-        presenter?.didEnter(text: inputTextField.text)
     }
 }
 
@@ -82,7 +93,7 @@ extension TranslateViewController: UITextFieldDelegate {
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        presenter?.didEnter(text: textField.text)
+        presenter?.didEnterText()
         return true
     }
 }

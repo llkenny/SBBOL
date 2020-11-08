@@ -24,6 +24,9 @@ final class LanguageSelectorAssembly {
         self.router = LanguageSelectorRouter(contentViewController: self.contentViewController)
         self.presenter = LanguageSelectorPresenter(contentViewController: self.contentViewController, router: self.router, interactor: self.interactor, inputModel: inputModel, delegate: delegate)
         self.contentViewController.presenter = self.presenter
+
+        contentViewController.loadViewIfNeeded()
+        presenter.viewIsReady()
     }
 
     // MARK: - Functions

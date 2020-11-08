@@ -18,10 +18,16 @@ protocol LanguageSelectorDelegate: class { // Delegate protocol.
 
 protocol LanguageSelectorViewToPresenter: class { // View calls, Presenter listens.
 
+    var itemsCount: Int { get }
+
+    func item(at indexPath: IndexPath) -> String
+    func didSelectItem(at indexPath: IndexPath)
     func closeButtonTap(sender: LanguageSelectorViewController)
 }
 
 protocol LanguageSelectorPresenterToView: class {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
+
+    func reload()
 }
 
 protocol LanguageSelectorPresenterToRouter: class {   // Presenter calls, Router listens.
@@ -33,4 +39,6 @@ protocol LanguageSelectorControllerToRouter: class {
 }
 
 protocol LanguageSelectorPresenterToInteractor: class {   // Presenter calls, Interactor listens.
+
+    func loadLanguages() throws -> [Language]
 }

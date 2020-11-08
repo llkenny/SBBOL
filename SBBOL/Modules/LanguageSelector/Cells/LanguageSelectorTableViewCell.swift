@@ -7,17 +7,17 @@
 
 import UIKit
 
-class LanguageSelectorTableViewCell: UITableViewCell {
+final class LanguageSelectorTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var languageLabel: UILabel!
+
+    func config(text: String) {
+        languageLabel.text = text
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        let weight: UIFont.Weight = selected ? .bold : .regular
+        languageLabel.font = UIFont.systemFont(ofSize: 16, weight: weight)
     }
-    
 }

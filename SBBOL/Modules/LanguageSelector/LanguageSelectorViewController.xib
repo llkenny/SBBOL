@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguageSelectorViewController" customModule="SBBOL" customModuleProvider="target">
             <connections>
                 <outlet property="customNavigationItem" destination="BjL-ER-Gmj" id="PaY-VC-2G7"/>
+                <outlet property="tableView" destination="jmK-Gx-jGU" id="n74-9O-WrJ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Rz3-7A-RWY"/>
             </connections>
         </placeholder>
@@ -42,9 +43,14 @@
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jmK-Gx-jGU">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jmK-Gx-jGU">
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kBZ-9D-rDN"/>
+                        <outlet property="delegate" destination="-1" id="1CX-MS-g7b"/>
+                    </connections>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

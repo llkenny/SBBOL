@@ -16,6 +16,7 @@ final class LanguageSelectorPresenter {
     private weak var interactor: LanguageSelectorPresenterToInteractor?
     private weak var delegate: LanguageSelectorDelegate?
     private var inputModel: LanguageSelectorInputModel
+    private var languages = [Language]()
 
     // MARK: - Construction
 
@@ -28,6 +29,17 @@ final class LanguageSelectorPresenter {
     }
 
     // MARK: - Functions
+
+    func viewIsReady() {
+        guard let interactor = interactor else { return }
+        do {
+            languages = try interactor.loadLanguages()
+            contentViewController?.reload()
+        } catch let error {
+            // TODO: Show error
+            debugPrint(error)
+        }
+    }
 }
 
 extension LanguageSelectorPresenter: LanguageSelectorModule {
@@ -35,7 +47,19 @@ extension LanguageSelectorPresenter: LanguageSelectorModule {
 
 extension LanguageSelectorPresenter: LanguageSelectorViewToPresenter {
 
+    var itemsCount: Int {
+        return languages.count
+    }
+
     func closeButtonTap(sender: LanguageSelectorViewController) {
         delegate?.close(controller: sender)
+    }
+
+    func item(at indexPath: IndexPath) -> String {
+        return languages[indexPath.row].name ?? ""
+    }
+
+    func didSelectItem(at indexPath: IndexPath) {
+        debugPrint(indexPath)
     }
 }

@@ -24,6 +24,7 @@ protocol TranslateViewToPresenter: class { // View calls, Presenter listens.
 protocol TranslatePresenterToView: class, AbleToShowActivityIndicator {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
 
     func showTranslation(text: String)
+    func change(language: Language, for type: LanguageSelectorType)
 }
 
 protocol TranslatePresenterToRouter: class {   // Presenter calls, Router listens.

@@ -8,4 +8,6 @@
 import Foundation
 
 struct LanguageSelectorInputModel {
+
+    let type: LanguageSelectorType
 }

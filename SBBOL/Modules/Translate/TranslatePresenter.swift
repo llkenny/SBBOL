@@ -17,6 +17,9 @@ final class TranslatePresenter {
     private weak var delegate: TranslateDelegate?
     private var inputModel: TranslateInputModel
 
+    private var sourceLangugage: Language?
+    private var destinationLanguage: Language?
+
     // MARK: - Construction
 
     init(contentViewController: TranslatePresenterToView, router: TranslatePresenterToRouter, interactor: TranslatePresenterToInteractor, inputModel: TranslateInputModel, delegate: TranslateDelegate) {
@@ -32,9 +35,14 @@ final class TranslatePresenter {
 
 extension TranslatePresenter: TranslateModule {
 
-    func didSelect(language: Language) {
-        // TODO:
-        debugPrint(language)
+    func didSelect(language: Language, type: LanguageSelectorType) {
+        switch type {
+        case .source:
+            sourceLangugage = language
+        case .destination:
+            destinationLanguage = language
+        }
+        contentViewController?.change(language: language, for: type)
     }
 
     func close(controller: LanguageSelectorViewController) {
@@ -62,8 +70,9 @@ extension TranslatePresenter: TranslateViewToPresenter {
             return
         }
         contentViewController?.update(isLoading: true)
-        // TODO: Provide to
-        interactor?.translate(text: text, to: "es") { result in
+        // TODO: Provide defaut "to" value
+        let to = destinationLanguage?.code ?? "en"
+        interactor?.translate(text: text, to: to) { result in
             self.contentViewController?.update(isLoading: false)
             switch result {
             case .success(let response):

@@ -60,7 +60,7 @@ extension LanguageSelectorPresenter: LanguageSelectorViewToPresenter {
     }
 
     func didSelectItem(sender: LanguageSelectorViewController, at indexPath: IndexPath) {
-        delegate?.didSelect(language: languages[indexPath.row])
+        delegate?.didSelect(language: languages[indexPath.row], type: inputModel.type)
         delegate?.close(controller: sender)
     }
 }

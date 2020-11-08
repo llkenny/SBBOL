@@ -12,7 +12,7 @@ protocol LanguageSelectorModule: class { // Module protocol.
 
 protocol LanguageSelectorDelegate: class { // Delegate protocol.
 
-    func didSelect(language: Language)
+    func didSelect(language: Language, type: LanguageSelectorType)
     func close(controller: LanguageSelectorViewController)
 }
 

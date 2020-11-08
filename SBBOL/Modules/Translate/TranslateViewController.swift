@@ -57,6 +57,18 @@ extension TranslateViewController: TranslatePresenterToView {
     func showTranslation(text: String) {
         outputLabel.text = text
     }
+
+    func change(language: Language, for type: LanguageSelectorType) {
+        let button: UIButton
+        switch type {
+        case .source:
+            button = sourceButton
+        case .destination:
+            button = destinationButton
+        }
+        button.setTitle(language.name, for: .normal)
+        presenter?.didEnter(text: inputTextField.text)
+    }
 }
 
 extension TranslateViewController: TranslateControllerToRouter {

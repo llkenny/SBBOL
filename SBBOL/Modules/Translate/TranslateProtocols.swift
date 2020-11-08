@@ -39,5 +39,5 @@ protocol TranslateControllerToRouter: class {
 
 protocol TranslatePresenterToInteractor: class {   // Presenter calls, Interactor listens.
 
-    func translate(text: String, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void)
+    func translate(text: String, from: String?, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void)
 }

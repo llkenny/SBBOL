@@ -17,11 +17,16 @@ final class AzureTranslateAPIService: APIService, TranslateAPIService {
     /// Text translation
     /// - Parameters:
     ///   - text: Text to translate
+    ///   - from: Source language code
     ///   - to: Destination language code
     ///   - completion: Translation or error
-    func translate(text: String, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void) {
-        let queryItems = [URLQueryItem(name: "to", value: to),
+    func translate(text: String, from: String?, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void) {
+        var queryItems = [URLQueryItem(name: "to", value: to),
                           URLQueryItem(name: "api-version", value: "3.0")]
+
+        if let from = from, !from.isEmpty {
+            queryItems.append(URLQueryItem(name: "from", value: from))
+        }
 
         let headers = ["Content-Type": "application/json",
                        "Ocp-Apim-Subscription-Key": APISettings.azureTranslateToken]

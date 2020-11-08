@@ -71,8 +71,9 @@ extension TranslatePresenter: TranslateViewToPresenter {
         }
         contentViewController?.update(isLoading: true)
         // TODO: Provide defaut "to" value
+        let from = sourceLangugage?.code
         let to = destinationLanguage?.code ?? "en"
-        interactor?.translate(text: text, to: to) { result in
+        interactor?.translate(text: text, from: from, to: to) { result in
             self.contentViewController?.update(isLoading: false)
             switch result {
             case .success(let response):

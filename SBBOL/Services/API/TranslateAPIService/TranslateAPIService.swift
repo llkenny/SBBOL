@@ -10,7 +10,8 @@ protocol TranslateAPIService {
     /// Text translation
     /// - Parameters:
     ///   - text: Text to translate
+    ///   - from: Source language code
     ///   - to: Destination language code
     ///   - completion: Translation or error
-    func translate(text: String, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void)
+    func translate(text: String, from: String?, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void)
 }

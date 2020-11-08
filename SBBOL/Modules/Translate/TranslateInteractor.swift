@@ -27,7 +27,7 @@ final class TranslateInteractor {
 
 extension TranslateInteractor: TranslatePresenterToInteractor {
 
-    func translate(text: String, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void) {
-        translateAPIService.translate(text: text, to: to, completion: completion)
+    func translate(text: String, from: String?, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void) {
+        translateAPIService.translate(text: text, from: from, to: to, completion: completion)
     }
 }

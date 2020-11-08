@@ -31,5 +31,5 @@ protocol RootControllerToRouter: class {
 
 protocol RootPresenterToInteractor: class {   // Presenter calls, Interactor listens.
 
-    func fetchLanguages(completion: @escaping (Result<AzureLanguageResponse, Error>) -> Void)
+    func fetchLanguages(completion: @escaping (Result<Void, Error>) -> Void)
 }

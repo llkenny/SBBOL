@@ -35,12 +35,11 @@ final class RootPresenter {
             guard let self = self else { return }
             self.contentViewController?.update(isLoading: false)
             switch result {
-            case .success(let response):
-                // TODO: save
-                debugPrint(response)
+            case .success:
                 self.showMainTabBar()
             case .failure(let error):
                 self.contentViewController?.showError(error: error)
+                // TODO: Retry button or something else
             }
         }
     }

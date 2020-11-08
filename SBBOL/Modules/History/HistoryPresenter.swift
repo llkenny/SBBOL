@@ -16,6 +16,8 @@ final class HistoryPresenter {
     private weak var interactor: HistoryPresenterToInteractor?
     private weak var delegate: HistoryDelegate?
     private var inputModel: HistoryInputModel
+    private var history = [History]()
+    private var filtered = [History]()
 
     // MARK: - Construction
 
@@ -28,10 +30,53 @@ final class HistoryPresenter {
     }
 
     // MARK: - Functions
+
+    func viewIsReady() {
+        guard let interactor = interactor else { return }
+        do {
+            history = try interactor.loadHistory()
+            filtered = history
+            contentViewController?.reload()
+        } catch let error {
+            // TODO: Show error
+            debugPrint(error)
+        }
+    }
+
+    // MARK: - Private functions
+
+    func performFilter() {
+        // TODO: Move to background queue or use fetchedResultsController
+        guard let filter = contentViewController?.searchText?.lowercased(), !filter.isEmpty else {
+            filtered = history
+            return
+        }
+        filtered = history.filter {
+            $0.text?.lowercased().contains(filter) == true ||
+                $0.translation?.lowercased().contains(filter) == true
+        }
+    }
 }
 
 extension HistoryPresenter: HistoryModule {
 }
 
 extension HistoryPresenter: HistoryViewToPresenter {
+
+    var itemsCount: Int {
+        return filtered.count
+    }
+
+    func item(at indexPath: IndexPath) -> History {
+        return filtered[indexPath.row]
+    }
+
+    func didSelectItem(at indexPath: IndexPath) {
+        delegate?.didSelect(historyItem: filtered[indexPath.row])
+    }
+
+    func didSearch() {
+        performFilter()
+        contentViewController?.reload()
+    }
 }

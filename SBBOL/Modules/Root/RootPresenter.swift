@@ -66,5 +66,14 @@ extension RootPresenter: RootViewToPresenter {
 }
 
 extension RootPresenter: TranslateDelegate {}
-extension RootPresenter: HistoryDelegate {}
+
+extension RootPresenter: HistoryDelegate {
+
+    func didSelect(historyItem: History) {
+        // TODO: Set into translation screen
+        // TODO: Open translation tab
+        debugPrint(historyItem)
+    }
+}
+
 extension RootPresenter: SettingsDelegate {}

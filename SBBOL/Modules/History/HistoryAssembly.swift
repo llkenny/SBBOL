@@ -24,6 +24,9 @@ final class HistoryAssembly {
         self.router = HistoryRouter(contentViewController: self.contentViewController)
         self.presenter = HistoryPresenter(contentViewController: self.contentViewController, router: self.router, interactor: self.interactor, inputModel: inputModel, delegate: delegate)
         self.contentViewController.presenter = self.presenter
+
+        contentViewController.loadViewIfNeeded()
+        presenter.viewIsReady()
     }
 
     // MARK: - Functions

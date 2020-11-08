@@ -7,11 +7,6 @@
 
 import Foundation
 
-enum LanguageSelectorType {
-
-    case source, destination
-}
-
 enum TranslateNavigation {
 
     case languageSelector(type: LanguageSelectorType)

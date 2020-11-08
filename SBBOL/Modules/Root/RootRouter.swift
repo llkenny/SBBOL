@@ -8,7 +8,9 @@
 import Foundation
 
 enum RootNavigation {
-    case mainTabBar(assemblies: [TabAssembly])
+    case
+        mainTabBar(assemblies: [TabAssembly]),
+        showTranslationTab(historyItem: History)
 }
 
 typealias RootRouterClosure = (() -> Void)
@@ -42,6 +44,8 @@ extension RootRouter: RootPresenterToRouter {
         switch destination {
         case .mainTabBar(let assemblies):
             presentMainTabBar(assemblies: assemblies)
+        case .showTranslationTab(let historyItem):
+            baseTabBarAssembly?.module.showTranslationTab(historyItem: historyItem)
         }
     }
 }

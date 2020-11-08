@@ -63,7 +63,11 @@ extension TranslateViewController: TranslatePresenterToView {
     }
 
     var currentTranslation: String? {
-        return outputLabel.text
+        get {
+            return outputLabel.text
+        } set {
+            outputLabel.text = newValue
+        }
     }
 
     func showTranslation(text: String) {

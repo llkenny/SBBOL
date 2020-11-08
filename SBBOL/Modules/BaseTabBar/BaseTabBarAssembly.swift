@@ -18,6 +18,10 @@ final class BaseTabBarAssembly {
 
     private let tabAssemblies: [TabAssembly]
 
+    var module: BaseTabBarModule {
+        return presenter
+    }
+
     // MARK: - Construction
 
     init(inputModel: BaseTabBarInputModel, delegate: BaseTabBarDelegate) {

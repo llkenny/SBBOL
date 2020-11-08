@@ -36,6 +36,15 @@ final class BaseTabBarPresenter {
 }
 
 extension BaseTabBarPresenter: BaseTabBarModule {
+
+    func showTranslationTab(historyItem: History) {
+        guard let contentViewController = contentViewController else { return }
+        if let index = contentViewController.viewControllers?.firstIndex (where: { $0 is TranslateViewController }) {
+            let assembly = inputModel.assemblies[index] as! TranslateAssembly
+            assembly.module.show(historyItem: historyItem)
+            contentViewController.selectTab(index: index)
+        }
+    }
 }
 
 extension BaseTabBarPresenter: BaseTabBarViewToPresenter {

@@ -60,6 +60,25 @@ final class TranslatePresenter {
 
 extension TranslatePresenter: TranslateModule {
 
+    func show(historyItem: History) {
+        guard let contentViewController = contentViewController else { return }
+        contentViewController.currentText = historyItem.text
+        contentViewController.currentTranslation = historyItem.translation
+
+        sourceLangugage = historyItem.sourceLanguage
+        destinationLanguage = historyItem.destinationLanguage
+
+        if let sourceLanguage = sourceLangugage {
+            contentViewController.change(language: sourceLanguage, for: .source)
+            // TODO: Make fallback to default language
+        }
+
+        if let destinationLanguage = destinationLanguage {
+            contentViewController.change(language: destinationLanguage, for: .destination)
+            // TODO: Make fallback to default language
+        }
+    }
+
     func didSelect(language: Language, type: LanguageSelectorType) {
         switch type {
         case .source:

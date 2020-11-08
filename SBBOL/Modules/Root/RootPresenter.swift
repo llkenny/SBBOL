@@ -70,9 +70,7 @@ extension RootPresenter: TranslateDelegate {}
 extension RootPresenter: HistoryDelegate {
 
     func didSelect(historyItem: History) {
-        // TODO: Set into translation screen
-        // TODO: Open translation tab
-        debugPrint(historyItem)
+        router?.navigate(to: .showTranslationTab(historyItem: historyItem), completion: nil)
     }
 }
 

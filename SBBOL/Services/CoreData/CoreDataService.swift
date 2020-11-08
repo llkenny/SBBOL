@@ -13,6 +13,7 @@ final class CoreDataService {
     enum Constants {
 
         static let languageEntityName = "Language"
+        static let historyEntityName = "History"
     }
 
     static let shared = CoreDataService()

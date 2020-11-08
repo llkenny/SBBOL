@@ -74,6 +74,7 @@
 		8C7C51FB2552E62F00AAFDD3 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C51F92552E62F00AAFDD3 /* BaseTabBarViewController.swift */; };
 		8C7C51FC2552E62F00AAFDD3 /* BaseTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7C51FA2552E62F00AAFDD3 /* BaseTabBarViewController.xib */; };
 		8C95A6FE2558530F00313BBF /* LanguageSelectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95A6FD2558530F00313BBF /* LanguageSelectorType.swift */; };
+		8C95A7022558631100313BBF /* CoreDataTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95A7012558631100313BBF /* CoreDataTools.swift */; };
 		8CACEB4025568E72000A41AC /* AbleToShowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACEB3F25568E72000A41AC /* AbleToShowError.swift */; };
 		8CACEB4425568F0B000A41AC /* AbleToShowActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACEB4325568F0B000A41AC /* AbleToShowActivityIndicator.swift */; };
 /* End PBXBuildFile section */
@@ -148,6 +149,7 @@
 		8C7C51F92552E62F00AAFDD3 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		8C7C51FA2552E62F00AAFDD3 /* BaseTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseTabBarViewController.xib; sourceTree = "<group>"; };
 		8C95A6FD2558530F00313BBF /* LanguageSelectorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorType.swift; sourceTree = "<group>"; };
+		8C95A7012558631100313BBF /* CoreDataTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTools.swift; sourceTree = "<group>"; };
 		8CACEB3F25568E72000A41AC /* AbleToShowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbleToShowError.swift; sourceTree = "<group>"; };
 		8CACEB4325568F0B000A41AC /* AbleToShowActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbleToShowActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +242,7 @@
 			children = (
 				8C580761255697B000EC8EB4 /* SBBOL.xcdatamodeld */,
 				8C5807652556A43600EC8EB4 /* CoreDataService.swift */,
+				8C95A7012558631100313BBF /* CoreDataTools.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				8C0F5ECF2553D74E001A29C1 /* LanguageAPIService.swift in Sources */,
 				8C7C51A62552DB0200AAFDD3 /* RootAssembly.swift in Sources */,
 				8C756E392555BDAB006CD5A9 /* LanguageSelectorInteractor.swift in Sources */,
+				8C95A7022558631100313BBF /* CoreDataTools.swift in Sources */,
 				8C2E35802554426900CCF841 /* APIService.swift in Sources */,
 				8C756E372555BDAB006CD5A9 /* LanguageSelectorProtocols.swift in Sources */,
 				8C7C51CC2552DF2300AAFDD3 /* TranslateProtocols.swift in Sources */,

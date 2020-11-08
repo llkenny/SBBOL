@@ -73,13 +73,15 @@ extension TranslatePresenter: TranslateViewToPresenter {
         // TODO: Provide defaut "to" value
         let from = sourceLangugage?.code
         let to = destinationLanguage?.code ?? "en"
-        interactor?.translate(text: text, from: from, to: to) { result in
+        interactor?.translate(text: text, from: from, to: to) { [weak self] result in
+            guard let self = self else { return }
             self.contentViewController?.update(isLoading: false)
             switch result {
             case .success(let response):
                 // TODO: Provide error if doesn't exist
                 let translation = response.first?.translations.first?.text ?? ""
                 self.contentViewController?.showTranslation(text: translation)
+                self.interactor?.save(text: text, translation: translation, sourceLanguage: self.sourceLangugage, destinationLanguage: self.destinationLanguage)
             case .failure(let error):
                 // TODO: Show error
                 debugPrint(error)

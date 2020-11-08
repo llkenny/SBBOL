@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8C01276925519120001F8447 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01276825519120001F8447 /* AppDelegate.swift */; };
-		8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C01277125519120001F8447 /* SBBOL.xcdatamodeld */; };
 		8C01277525519120001F8447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C01277425519120001F8447 /* Assets.xcassets */; };
 		8C01277825519120001F8447 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C01277625519120001F8447 /* LaunchScreen.storyboard */; };
 		8C0F5ECB2553D611001A29C1 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5ECA2553D611001A29C1 /* APIError.swift */; };
@@ -21,6 +20,8 @@
 		8C0F5EEB2553F354001A29C1 /* AzureTranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */; };
 		8C2E357D255435B800CCF841 /* AzureLanguageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */; };
 		8C2E35802554426900CCF841 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357F2554426900CCF841 /* APIService.swift */; };
+		8C580763255697B000EC8EB4 /* SBBOL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C580761255697B000EC8EB4 /* SBBOL.xcdatamodeld */; };
+		8C5807662556A43600EC8EB4 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5807652556A43600EC8EB4 /* CoreDataService.swift */; };
 		8C756E332555BDAB006CD5A9 /* LanguageSelectorInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E2B2555BDAB006CD5A9 /* LanguageSelectorInputModel.swift */; };
 		8C756E342555BDAB006CD5A9 /* LanguageSelectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E2C2555BDAB006CD5A9 /* LanguageSelectorPresenter.swift */; };
 		8C756E352555BDAB006CD5A9 /* LanguageSelectorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C756E2D2555BDAB006CD5A9 /* LanguageSelectorRouter.swift */; };
@@ -79,7 +80,6 @@
 /* Begin PBXFileReference section */
 		8C01276525519120001F8447 /* SBBOL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBBOL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C01276825519120001F8447 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C01277225519120001F8447 /* SBBOL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SBBOL.xcdatamodel; sourceTree = "<group>"; };
 		8C01277425519120001F8447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C01277725519120001F8447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C01277925519120001F8447 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,6 +93,8 @@
 		8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateResponse.swift; sourceTree = "<group>"; };
 		8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureLanguageResponse.swift; sourceTree = "<group>"; };
 		8C2E357F2554426900CCF841 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8C580762255697B000EC8EB4 /* SBBOL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SBBOL.xcdatamodel; sourceTree = "<group>"; };
+		8C5807652556A43600EC8EB4 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		8C756E2B2555BDAB006CD5A9 /* LanguageSelectorInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorInputModel.swift; sourceTree = "<group>"; };
 		8C756E2C2555BDAB006CD5A9 /* LanguageSelectorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorPresenter.swift; sourceTree = "<group>"; };
 		8C756E2D2555BDAB006CD5A9 /* LanguageSelectorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectorRouter.swift; sourceTree = "<group>"; };
@@ -185,7 +187,6 @@
 				8C01277425519120001F8447 /* Assets.xcassets */,
 				8C01277625519120001F8447 /* LaunchScreen.storyboard */,
 				8C01277925519120001F8447 /* Info.plist */,
-				8C01277125519120001F8447 /* SBBOL.xcdatamodeld */,
 			);
 			path = SBBOL;
 			sourceTree = "<group>";
@@ -193,6 +194,7 @@
 		8C0F5EC82553D5D1001A29C1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8C5807602556979B00EC8EB4 /* CoreData */,
 				8C0F5EC92553D5D7001A29C1 /* API */,
 			);
 			path = Services;
@@ -229,6 +231,15 @@
 				8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */,
 			);
 			path = TranslateAPIService;
+			sourceTree = "<group>";
+		};
+		8C5807602556979B00EC8EB4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8C580761255697B000EC8EB4 /* SBBOL.xcdatamodeld */,
+				8C5807652556A43600EC8EB4 /* CoreDataService.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		8C756E2A2555BD88006CD5A9 /* LanguageSelector */ = {
@@ -452,7 +463,6 @@
 				8C7C51C92552DF2300AAFDD3 /* TranslatePresenter.swift in Sources */,
 				8CACEB4025568E72000A41AC /* AbleToShowError.swift in Sources */,
 				8C7C51B42552DB1600AAFDD3 /* BaseTabBarRouter.swift in Sources */,
-				8C01277325519120001F8447 /* SBBOL.xcdatamodeld in Sources */,
 				8C7C51A42552DB0200AAFDD3 /* RootViewController.swift in Sources */,
 				8C7C51A72552DB0200AAFDD3 /* RootInteractor.swift in Sources */,
 				8C756E382555BDAB006CD5A9 /* LanguageSelectorAssembly.swift in Sources */,
@@ -478,6 +488,7 @@
 				8C7C51EA2552DF3A00AAFDD3 /* SettingsInputModel.swift in Sources */,
 				8C7C51B32552DB1600AAFDD3 /* BaseTabBarPresenter.swift in Sources */,
 				8C7C51F02552DF3A00AAFDD3 /* SettingsInteractor.swift in Sources */,
+				8C580763255697B000EC8EB4 /* SBBOL.xcdatamodeld in Sources */,
 				8C7C51FB2552E62F00AAFDD3 /* BaseTabBarViewController.swift in Sources */,
 				8C7C51A32552DB0200AAFDD3 /* RootRouter.swift in Sources */,
 				8C0F5EEB2553F354001A29C1 /* AzureTranslateResponse.swift in Sources */,
@@ -489,6 +500,7 @@
 				8C01276925519120001F8447 /* AppDelegate.swift in Sources */,
 				8C0F5EDE2553E6DD001A29C1 /* AzureTranslateAPIService.swift in Sources */,
 				8C0F5EDA2553E6BF001A29C1 /* TranslateAPIService.swift in Sources */,
+				8C5807662556A43600EC8EB4 /* CoreDataService.swift in Sources */,
 				8CACEB4425568F0B000A41AC /* AbleToShowActivityIndicator.swift in Sources */,
 				8C7C51DF2552DF3000AAFDD3 /* HistoryInteractor.swift in Sources */,
 				8C7C51A52552DB0200AAFDD3 /* RootProtocols.swift in Sources */,
@@ -691,12 +703,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8C01277125519120001F8447 /* SBBOL.xcdatamodeld */ = {
+		8C580761255697B000EC8EB4 /* SBBOL.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8C01277225519120001F8447 /* SBBOL.xcdatamodel */,
+				8C580762255697B000EC8EB4 /* SBBOL.xcdatamodel */,
 			);
-			currentVersion = 8C01277225519120001F8447 /* SBBOL.xcdatamodel */;
+			currentVersion = 8C580762255697B000EC8EB4 /* SBBOL.xcdatamodel */;
 			path = SBBOL.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

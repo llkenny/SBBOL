@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="History" representedClassName="History" syncable="YES" codeGenerationType="class">
+        <attribute name="text" attributeType="String"/>
+        <attribute name="translation" optional="YES" attributeType="String"/>
+        <relationship name="destinationLanguage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Language" inverseName="translations" inverseEntity="Language"/>
+        <relationship name="sourceLanguage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Language" inverseName="texts" inverseEntity="Language"/>
+    </entity>
+    <entity name="Language" representedClassName="Language" syncable="YES" codeGenerationType="class">
+        <attribute name="code" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="texts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="History" inverseName="sourceLanguage" inverseEntity="History"/>
+        <relationship name="translations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="History" inverseName="destinationLanguage" inverseEntity="History"/>
+    </entity>
+    <elements>
+        <element name="Language" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="History" positionX="-54" positionY="9" width="128" height="103"/>
+    </elements>
+</model>

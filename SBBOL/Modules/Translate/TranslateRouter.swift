@@ -31,7 +31,6 @@ final class TranslateRouter {
     // MARK: - Functions
 
     func presentLanguageSelector(type: LanguageSelectorType) {
-        // TODO: Set type
         let languageSelectorAssembly = LanguageSelectorAssembly(inputModel: LanguageSelectorInputModel(type: type), delegate: module)
         contentViewController?.present(controller: languageSelectorAssembly.contentViewController)
         self.languageSelectorAssembly = languageSelectorAssembly

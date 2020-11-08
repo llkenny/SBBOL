@@ -32,7 +32,7 @@ final class TranslatePresenter {
 
 extension TranslatePresenter: TranslateModule {
 
-    func didSelect(language: AzureLanguageResponse.Language) {
+    func didSelect(language: Language) {
         // TODO:
         debugPrint(language)
     }

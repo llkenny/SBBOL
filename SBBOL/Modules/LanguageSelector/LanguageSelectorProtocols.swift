@@ -12,7 +12,7 @@ protocol LanguageSelectorModule: class { // Module protocol.
 
 protocol LanguageSelectorDelegate: class { // Delegate protocol.
 
-    func didSelect(language: AzureLanguageResponse.Language)
+    func didSelect(language: Language)
     func close(controller: LanguageSelectorViewController)
 }
 
@@ -21,7 +21,7 @@ protocol LanguageSelectorViewToPresenter: class { // View calls, Presenter liste
     var itemsCount: Int { get }
 
     func item(at indexPath: IndexPath) -> String
-    func didSelectItem(at indexPath: IndexPath)
+    func didSelectItem(sender: LanguageSelectorViewController, at indexPath: IndexPath)
     func closeButtonTap(sender: LanguageSelectorViewController)
 }
 

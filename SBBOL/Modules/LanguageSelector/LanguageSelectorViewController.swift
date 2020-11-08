@@ -79,6 +79,6 @@ extension LanguageSelectorViewController: UITableViewDataSource {
 extension LanguageSelectorViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        presenter?.didSelectItem(at: indexPath)
+        presenter?.didSelectItem(sender: self, at: indexPath)
     }
 }

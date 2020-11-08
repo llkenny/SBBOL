@@ -59,7 +59,8 @@ extension LanguageSelectorPresenter: LanguageSelectorViewToPresenter {
         return languages[indexPath.row].name ?? ""
     }
 
-    func didSelectItem(at indexPath: IndexPath) {
-        debugPrint(indexPath)
+    func didSelectItem(sender: LanguageSelectorViewController, at indexPath: IndexPath) {
+        delegate?.didSelect(language: languages[indexPath.row])
+        delegate?.close(controller: sender)
     }
 }

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LanguageSelectorViewController" customModule="SBBOL" customModuleProvider="target">
+            <connections>
+                <outlet property="customNavigationItem" destination="BjL-ER-Gmj" id="PaY-VC-2G7"/>
+                <outlet property="tableView" destination="jmK-Gx-jGU" id="n74-9O-WrJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Rz3-7A-RWY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" backIndicatorImage="multiply" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="h6A-el-TKv">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="CHV-7B-5RH"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <textAttributes key="largeTitleTextAttributes">
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Title" id="BjL-ER-Gmj">
+                            <barButtonItem key="leftBarButtonItem" image="multiply" catalog="system" style="plain" id="fzM-3l-Ii8">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="closeButtonTap:" destination="-1" id="0SY-wU-fB7"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jmK-Gx-jGU">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kBZ-9D-rDN"/>
+                        <outlet property="delegate" destination="-1" id="1CX-MS-g7b"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="h6A-el-TKv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Mb3-kW-N4t"/>
+                <constraint firstItem="h6A-el-TKv" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="MvV-xV-tc3"/>
+                <constraint firstItem="h6A-el-TKv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="YF6-8Q-UDp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jmK-Gx-jGU" secondAttribute="trailing" id="agm-r7-7Rz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jmK-Gx-jGU" secondAttribute="bottom" id="gmM-em-xFy"/>
+                <constraint firstItem="jmK-Gx-jGU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qiT-jF-kQg"/>
+                <constraint firstItem="jmK-Gx-jGU" firstAttribute="top" secondItem="h6A-el-TKv" secondAttribute="bottom" id="rps-W4-sCe"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="multiply" catalog="system" width="128" height="111"/>
+    </resources>
+</document>

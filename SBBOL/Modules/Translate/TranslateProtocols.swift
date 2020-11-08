@@ -7,16 +7,27 @@
 
 import Foundation
 
-protocol TranslateModule: class { // Module protocol.
+protocol TranslateModule: LanguageSelectorDelegate { // Module protocol.
 }
 
 protocol TranslateDelegate: class { // Delegate protocol.
 }
 
 protocol TranslateViewToPresenter: class { // View calls, Presenter listens.
+
+    func didEnterText()
+    func sourceButtonTap()
+    func swapButtonTap()
+    func destinationButtonTap()
 }
 
-protocol TranslatePresenterToView: class {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
+protocol TranslatePresenterToView: class, AbleToShowActivityIndicator {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
+
+    var currentText: String? { get set }
+    var currentTranslation: String? { get }
+
+    func showTranslation(text: String)
+    func change(language: Language, for type: LanguageSelectorType)
 }
 
 protocol TranslatePresenterToRouter: class {   // Presenter calls, Router listens.
@@ -25,7 +36,12 @@ protocol TranslatePresenterToRouter: class {   // Presenter calls, Router listen
 }
 
 protocol TranslateControllerToRouter: class {
+
+    func present(controller: LanguageSelectorViewController)
 }
 
 protocol TranslatePresenterToInteractor: class {   // Presenter calls, Interactor listens.
+
+    func translate(text: String, from: String?, to: String, completion: @escaping (Result<[AzureTranslateResponse], Error>) -> Void)
+    func save(text: String, translation: String, sourceLanguage: Language?, destinationLanguage: Language?)
 }

@@ -17,6 +17,6 @@ struct AzureTranslateResponse: Decodable {
         let to: String
     }
 
-    let detectedLanguage: Language
+    let detectedLanguage: Language?
     let translations: [Translation]
 }

@@ -30,8 +30,18 @@ final class RootPresenter {
     // MARK: - Functions
 
     func viewIsReady() {
-        let assemblies = configTabAssemblies()
-        router?.navigate(to: .mainTabBar(assemblies: assemblies), completion: nil)
+        contentViewController?.update(isLoading: true)
+        interactor?.fetchLanguages { [weak self] result in
+            guard let self = self else { return }
+            self.contentViewController?.update(isLoading: false)
+            switch result {
+            case .success:
+                self.showMainTabBar()
+            case .failure(let error):
+                self.contentViewController?.showError(error: error)
+                // TODO: Retry button or something else
+            }
+        }
     }
 
     func configTabAssemblies() -> [TabAssembly] {
@@ -39,6 +49,13 @@ final class RootPresenter {
         let history = HistoryAssembly(inputModel: HistoryInputModel(), delegate: self)
         let settings = SettingsAssembly(inputModel: SettingsInputModel(), delegate: self)
         return [translate, history, settings]
+    }
+
+    // MARK: - Private functions
+
+    private func showMainTabBar() {
+        let assemblies = configTabAssemblies()
+        router?.navigate(to: .mainTabBar(assemblies: assemblies), completion: nil)
     }
 }
 

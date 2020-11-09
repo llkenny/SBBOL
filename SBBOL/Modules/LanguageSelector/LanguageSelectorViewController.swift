@@ -29,8 +29,6 @@ final class LanguageSelectorViewController: UIViewController {
         configTableView()
     }
 
-    // TODO: TableView with selection
-
     // MARK: - IBActions
 
     @IBAction func closeButtonTap(_ sender: Any) {

@@ -19,6 +19,7 @@ protocol LanguageSelectorDelegate: class { // Delegate protocol.
 protocol LanguageSelectorViewToPresenter: class { // View calls, Presenter listens.
 
     var itemsCount: Int { get }
+    var languageTypeName: String { get }
 
     func item(at indexPath: IndexPath) -> String
     func didSelectItem(sender: LanguageSelectorViewController, at indexPath: IndexPath)

@@ -42,8 +42,6 @@ final class LanguageSelectorViewController: UIViewController {
     // MARK: - Private functions
 
     private func localize() {
-        // TODO: Add type
-        customNavigationItem.title = "Select language"
     }
 
     private func configTableView() {
@@ -55,6 +53,8 @@ final class LanguageSelectorViewController: UIViewController {
 extension LanguageSelectorViewController: LanguageSelectorPresenterToView {
 
     func reload() {
+        let type = presenter?.languageTypeName ?? ""
+        customNavigationItem.title = "\(type) language"
         tableView.reloadData()
     }
 }

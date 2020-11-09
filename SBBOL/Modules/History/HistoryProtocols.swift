@@ -42,6 +42,15 @@ protocol HistoryControllerToRouter: class {
 
 protocol HistoryPresenterToInteractor: class {   // Presenter calls, Interactor listens.
 
-    func loadHistory() throws -> [History]
+    var itemsCount: Int { get }
+
+    func item(at indexPath: IndexPath) -> History
+    func loadHistory() throws
     func deleteAll() throws
+    func update(filter: String) throws
+}
+
+protocol HistoryInteractorToPresenter: class {
+
+    func historyDidChange()
 }

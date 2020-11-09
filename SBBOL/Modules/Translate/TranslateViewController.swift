@@ -14,7 +14,7 @@ final class TranslateViewController: UIViewController {
     // MARK: - Properties
 
     @IBOutlet weak var inputTextView: UITextView!
-    @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var outputTextView: UITextView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var sourceButton: UIButton!
@@ -65,14 +65,14 @@ extension TranslateViewController: TranslatePresenterToView {
 
     var currentTranslation: String? {
         get {
-            return outputLabel.text
+            return outputTextView.text
         } set {
-            outputLabel.text = newValue
+            outputTextView.text = newValue
         }
     }
 
     func showTranslation(text: String) {
-        outputLabel.text = text
+        outputTextView.text = text
     }
 
     func change(language: Language, for type: LanguageSelectorType) {

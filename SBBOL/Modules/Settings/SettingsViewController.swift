@@ -20,6 +20,7 @@ final class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         localize()
+        tabBarItem.image = UIImage(systemName: "seal.fill")
     }
 
     // MARK: - IBActions

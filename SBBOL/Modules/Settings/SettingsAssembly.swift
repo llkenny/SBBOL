@@ -24,6 +24,8 @@ final class SettingsAssembly {
         self.router = SettingsRouter(contentViewController: self.contentViewController)
         self.presenter = SettingsPresenter(contentViewController: self.contentViewController, router: self.router, interactor: self.interactor, inputModel: inputModel, delegate: delegate)
         self.contentViewController.presenter = self.presenter
+
+        contentViewController.loadViewIfNeeded()
     }
 
     // MARK: - Functions

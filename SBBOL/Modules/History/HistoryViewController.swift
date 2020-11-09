@@ -27,6 +27,7 @@ final class HistoryViewController: UIViewController {
         super.viewDidLoad()
         localize()
         configTableView()
+        tabBarItem.image = UIImage(systemName: "tray.full")
     }
 
     // MARK: - IBActions

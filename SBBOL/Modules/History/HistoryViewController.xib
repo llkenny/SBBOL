@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,10 +23,11 @@
             <subviews>
                 <navigationBar contentMode="scaleToFill" backIndicatorImage="multiply" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f3g-HJ-9d0">
                     <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="0BS-hQ-6T9"/>
                     </constraints>
-                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" systemColor="systemYellowColor"/>
                     <textAttributes key="titleTextAttributes">
                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </textAttributes>
@@ -45,8 +47,8 @@
                 </navigationBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oES-h4-A6R">
                     <rect key="frame" x="0.0" y="144" width="414" height="718"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.98561289612676062" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="dTm-GK-fWF"/>
                         <outlet property="delegate" destination="-1" id="yyF-X8-ZUl"/>
@@ -64,7 +66,7 @@
                 </searchBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
             <constraints>
                 <constraint firstItem="oES-h4-A6R" firstAttribute="top" secondItem="Eqk-cx-LAX" secondAttribute="bottom" id="7hc-ox-3c6"/>
                 <constraint firstItem="Eqk-cx-LAX" firstAttribute="top" secondItem="f3g-HJ-9d0" secondAttribute="bottom" id="Bvp-X3-h5W"/>
@@ -82,5 +84,8 @@
     </objects>
     <resources>
         <image name="multiply" catalog="system" width="128" height="111"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

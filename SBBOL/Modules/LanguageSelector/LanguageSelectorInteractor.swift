@@ -33,6 +33,8 @@ extension LanguageSelectorInteractor: LanguageSelectorPresenterToInteractor {
 
     func loadLanguages() throws -> [Language] {
         let request = NSFetchRequest<Language>(entityName: CoreDataService.Constants.languageEntityName)
+        let sort = NSSortDescriptor(key: #keyPath(Language.name), ascending: true)
+        request.sortDescriptors = [sort]
         return try context.fetch(request)
     }
 }

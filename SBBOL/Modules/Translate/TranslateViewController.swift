@@ -13,7 +13,7 @@ final class TranslateViewController: UIViewController {
 
     // MARK: - Properties
 
-    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var inputTextView: UITextView!
     @IBOutlet weak var outputLabel: UILabel!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -27,7 +27,7 @@ final class TranslateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         localize()
-        inputTextField.delegate = self
+        inputTextView.delegate = self
         tabBarItem.image = UIImage(systemName: "a.circle.fill")
     }
 
@@ -57,9 +57,9 @@ extension TranslateViewController: TranslatePresenterToView {
 
     var currentText: String? {
         get {
-            return inputTextField.text
+            return inputTextView.text
         } set {
-            inputTextField.text = newValue
+            inputTextView.text = newValue
         }
     }
 
@@ -94,11 +94,14 @@ extension TranslateViewController: TranslateControllerToRouter {
     }
 }
 
-extension TranslateViewController: UITextFieldDelegate {
+extension TranslateViewController: UITextViewDelegate {
 
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        presenter?.didEnterText()
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.resignFirstResponder()
+            presenter?.didEnterText()
+            return false
+        }
         return true
     }
 }

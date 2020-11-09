@@ -16,8 +16,6 @@ final class HistoryPresenter {
     private weak var interactor: HistoryPresenterToInteractor?
     private weak var delegate: HistoryDelegate?
     private var inputModel: HistoryInputModel
-    private var history = [History]()
-    private var filtered = [History]()
 
     // MARK: - Construction
 
@@ -32,10 +30,8 @@ final class HistoryPresenter {
     // MARK: - Functions
 
     func viewIsReady() {
-        guard let interactor = interactor else { return }
         do {
-            history = try interactor.loadHistory()
-            filtered = history
+            try interactor?.loadHistory()
             contentViewController?.reload()
         } catch let error {
             // TODO: Show error
@@ -44,18 +40,6 @@ final class HistoryPresenter {
     }
 
     // MARK: - Private functions
-
-    func performFilter() {
-        // TODO: Move to background queue or use fetchedResultsController
-        guard let filter = contentViewController?.searchText?.lowercased(), !filter.isEmpty else {
-            filtered = history
-            return
-        }
-        filtered = history.filter {
-            $0.text?.lowercased().contains(filter) == true ||
-                $0.translation?.lowercased().contains(filter) == true
-        }
-    }
 }
 
 extension HistoryPresenter: HistoryModule {
@@ -64,20 +48,25 @@ extension HistoryPresenter: HistoryModule {
 extension HistoryPresenter: HistoryViewToPresenter {
 
     var itemsCount: Int {
-        return filtered.count
+        return interactor?.itemsCount ?? 0
     }
 
     func item(at indexPath: IndexPath) -> History {
-        return filtered[indexPath.row]
+        return interactor!.item(at: indexPath)
     }
 
     func didSelectItem(at indexPath: IndexPath) {
-        delegate?.didSelect(historyItem: filtered[indexPath.row])
+        let item = interactor!.item(at: indexPath)
+        delegate?.didSelect(historyItem: item)
     }
 
     func didSearch() {
-        performFilter()
-        contentViewController?.reload()
+        do {
+            try interactor?.update(filter: contentViewController?.searchText ?? "")
+            contentViewController?.reload()
+        } catch let error {
+            // TODO: Handle
+        }
     }
 
     func deleteAllButtonTap() {
@@ -87,5 +76,12 @@ extension HistoryPresenter: HistoryViewToPresenter {
         } catch let error {
             // TODO: Handle error
         }
+    }
+}
+
+extension HistoryPresenter: HistoryInteractorToPresenter {
+
+    func historyDidChange() {
+        contentViewController?.reload()
     }
 }

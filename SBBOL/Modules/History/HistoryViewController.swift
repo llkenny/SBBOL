@@ -92,3 +92,5 @@ extension HistoryViewController: UISearchBarDelegate {
         presenter?.didSearch()
     }
 }
+
+extension HistoryViewController: AbleToShowError {}

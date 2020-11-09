@@ -23,7 +23,7 @@ protocol TranslateViewToPresenter: class { // View calls, Presenter listens.
     func destinationButtonTap()
 }
 
-protocol TranslatePresenterToView: class, AbleToShowActivityIndicator {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
+protocol TranslatePresenterToView: class, AbleToShowActivityIndicator, AbleToShowError {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
 
     var currentText: String? { get set }
     var currentTranslation: String? { get set }

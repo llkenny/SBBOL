@@ -34,8 +34,7 @@ final class HistoryPresenter {
             try interactor?.loadHistory()
             contentViewController?.reload()
         } catch let error {
-            // TODO: Show error
-            debugPrint(error)
+            contentViewController?.showError(error: error)
         }
     }
 
@@ -65,7 +64,7 @@ extension HistoryPresenter: HistoryViewToPresenter {
             try interactor?.update(filter: contentViewController?.searchText ?? "")
             contentViewController?.reload()
         } catch let error {
-            // TODO: Handle
+            contentViewController?.showError(error: error)
         }
     }
 
@@ -74,7 +73,7 @@ extension HistoryPresenter: HistoryViewToPresenter {
             try interactor?.deleteAll()
             contentViewController?.reload()
         } catch let error {
-            // TODO: Handle error
+            contentViewController?.showError(error: error)
         }
     }
 }

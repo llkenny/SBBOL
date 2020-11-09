@@ -104,3 +104,4 @@ extension TranslateViewController: UITextFieldDelegate {
 }
 
 extension TranslateViewController: AbleToShowActivityIndicator {}
+extension TranslateViewController: AbleToShowError {}

@@ -36,8 +36,7 @@ final class LanguageSelectorPresenter {
             languages = try interactor.loadLanguages()
             contentViewController?.reload()
         } catch let error {
-            // TODO: Show error
-            debugPrint(error)
+            contentViewController?.showError(error: error)
         }
     }
 }

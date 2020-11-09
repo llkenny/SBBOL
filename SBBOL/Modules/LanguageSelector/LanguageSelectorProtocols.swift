@@ -26,7 +26,7 @@ protocol LanguageSelectorViewToPresenter: class { // View calls, Presenter liste
     func closeButtonTap(sender: LanguageSelectorViewController)
 }
 
-protocol LanguageSelectorPresenterToView: class {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
+protocol LanguageSelectorPresenterToView: class, AbleToShowError {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
 
     func reload()
 }

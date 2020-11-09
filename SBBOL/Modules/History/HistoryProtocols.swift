@@ -25,7 +25,7 @@ protocol HistoryViewToPresenter: class { // View calls, Presenter listens.
     func deleteAllButtonTap()
 }
 
-protocol HistoryPresenterToView: class {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
+protocol HistoryPresenterToView: class, AbleToShowError {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
 
     var searchText: String? { get }
     

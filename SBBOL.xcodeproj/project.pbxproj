@@ -18,6 +18,8 @@
 		8C0F5EDE2553E6DD001A29C1 /* AzureTranslateAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EDD2553E6DD001A29C1 /* AzureTranslateAPIService.swift */; };
 		8C0F5EE82553EBB9001A29C1 /* AzureTranslateRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EE72553EBB9001A29C1 /* AzureTranslateRequestData.swift */; };
 		8C0F5EEB2553F354001A29C1 /* AzureTranslateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */; };
+		8C16CD992558776F004D788B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C16CD972558776F004D788B /* HistoryTableViewCell.swift */; };
+		8C16CD9A2558776F004D788B /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C16CD982558776F004D788B /* HistoryTableViewCell.xib */; };
 		8C2E357D255435B800CCF841 /* AzureLanguageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */; };
 		8C2E35802554426900CCF841 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E357F2554426900CCF841 /* APIService.swift */; };
 		8C580763255697B000EC8EB4 /* SBBOL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C580761255697B000EC8EB4 /* SBBOL.xcdatamodeld */; };
@@ -93,6 +95,8 @@
 		8C0F5EDD2553E6DD001A29C1 /* AzureTranslateAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateAPIService.swift; sourceTree = "<group>"; };
 		8C0F5EE72553EBB9001A29C1 /* AzureTranslateRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateRequestData.swift; sourceTree = "<group>"; };
 		8C0F5EEA2553F354001A29C1 /* AzureTranslateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureTranslateResponse.swift; sourceTree = "<group>"; };
+		8C16CD972558776F004D788B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		8C16CD982558776F004D788B /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		8C2E357C255435B800CCF841 /* AzureLanguageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureLanguageResponse.swift; sourceTree = "<group>"; };
 		8C2E357F2554426900CCF841 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		8C580762255697B000EC8EB4 /* SBBOL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SBBOL.xcdatamodel; sourceTree = "<group>"; };
@@ -237,6 +241,15 @@
 			path = TranslateAPIService;
 			sourceTree = "<group>";
 		};
+		8C16CD962558775D004D788B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C16CD972558776F004D788B /* HistoryTableViewCell.swift */,
+				8C16CD982558776F004D788B /* HistoryTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		8C5807602556979B00EC8EB4 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +348,7 @@
 		8C7C51BE2552DF0600AAFDD3 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				8C16CD962558775D004D788B /* Cells */,
 				8C7C51D12552DF3000AAFDD3 /* HistoryInputModel.swift */,
 				8C7C51D22552DF3000AAFDD3 /* HistoryPresenter.swift */,
 				8C7C51D32552DF3000AAFDD3 /* HistoryRouter.swift */,
@@ -450,6 +464,7 @@
 				8C01277525519120001F8447 /* Assets.xcassets in Resources */,
 				8C756E3A2555BDAB006CD5A9 /* LanguageSelectorViewController.xib in Resources */,
 				8C7C51A82552DB0200AAFDD3 /* RootViewController.xib in Resources */,
+				8C16CD9A2558776F004D788B /* HistoryTableViewCell.xib in Resources */,
 				8C7C51CF2552DF2300AAFDD3 /* TranslateViewController.xib in Resources */,
 				8C7C51F12552DF3A00AAFDD3 /* SettingsViewController.xib in Resources */,
 				8C7C51E02552DF3000AAFDD3 /* HistoryViewController.xib in Resources */,
@@ -471,6 +486,7 @@
 				8C7C51DA2552DF3000AAFDD3 /* HistoryPresenter.swift in Sources */,
 				8C7C51DC2552DF3000AAFDD3 /* HistoryViewController.swift in Sources */,
 				8C756E332555BDAB006CD5A9 /* LanguageSelectorInputModel.swift in Sources */,
+				8C16CD992558776F004D788B /* HistoryTableViewCell.swift in Sources */,
 				8C7C51A12552DB0200AAFDD3 /* RootInputModel.swift in Sources */,
 				8C7C51DD2552DF3000AAFDD3 /* HistoryProtocols.swift in Sources */,
 				8C7C51EE2552DF3A00AAFDD3 /* SettingsProtocols.swift in Sources */,

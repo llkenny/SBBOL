@@ -66,5 +66,12 @@ extension RootPresenter: RootViewToPresenter {
 }
 
 extension RootPresenter: TranslateDelegate {}
-extension RootPresenter: HistoryDelegate {}
+
+extension RootPresenter: HistoryDelegate {
+
+    func didSelect(historyItem: History) {
+        router?.navigate(to: .showTranslationTab(historyItem: historyItem), completion: nil)
+    }
+}
+
 extension RootPresenter: SettingsDelegate {}

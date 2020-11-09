@@ -16,6 +16,10 @@ final class TranslateAssembly {
     private var router: TranslateRouter
     private var interactor: TranslateInteractor
 
+    var module: TranslateModule {
+        return presenter
+    }
+
     // MARK: - Construction
 
     init(inputModel: TranslateInputModel, delegate: TranslateDelegate) {

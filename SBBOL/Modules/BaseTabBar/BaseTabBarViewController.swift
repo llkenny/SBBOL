@@ -34,6 +34,10 @@ final class BaseTabBarViewController: UITabBarController {
 
 extension BaseTabBarViewController: BaseTabBarPresenterToView {
 
+    func selectTab(index: Int) {
+        selectedIndex = index
+    }
+
     func update(viewControllers: [UIViewController]) {
         self.viewControllers = viewControllers
     }

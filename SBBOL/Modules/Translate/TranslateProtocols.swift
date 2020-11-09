@@ -8,6 +8,8 @@
 import Foundation
 
 protocol TranslateModule: LanguageSelectorDelegate { // Module protocol.
+
+    func show(historyItem: History)
 }
 
 protocol TranslateDelegate: class { // Delegate protocol.
@@ -24,7 +26,7 @@ protocol TranslateViewToPresenter: class { // View calls, Presenter listens.
 protocol TranslatePresenterToView: class, AbleToShowActivityIndicator {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
 
     var currentText: String? { get set }
-    var currentTranslation: String? { get }
+    var currentTranslation: String? { get set }
 
     func showTranslation(text: String)
     func change(language: Language, for type: LanguageSelectorType)

@@ -36,7 +36,7 @@
                     </textAttributes>
                     <items>
                         <navigationItem title="History" id="YN2-mv-ZjI">
-                            <barButtonItem key="rightBarButtonItem" title="Delete All" style="plain" id="D7r-09-h3Z">
+                            <barButtonItem key="rightBarButtonItem" image="trash.fill" catalog="system" style="plain" id="D7r-09-h3Z">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="deleteAll:" destination="-1" id="veS-bl-yIU"/>
@@ -84,6 +84,7 @@
     </objects>
     <resources>
         <image name="multiply" catalog="system" width="128" height="111"/>
+        <image name="trash.fill" catalog="system" width="121" height="128"/>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

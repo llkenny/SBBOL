@@ -82,3 +82,5 @@ extension LanguageSelectorViewController: UITableViewDelegate {
         presenter?.didSelectItem(sender: self, at: indexPath)
     }
 }
+
+extension LanguageSelectorViewController: AbleToShowError {}

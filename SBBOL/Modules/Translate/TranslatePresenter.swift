@@ -51,8 +51,7 @@ final class TranslatePresenter {
                 self.contentViewController?.showTranslation(text: translation)
                 self.interactor?.save(text: text, translation: translation, sourceLanguage: self.sourceLangugage, destinationLanguage: self.destinationLanguage)
             case .failure(let error):
-                // TODO: Show error
-                debugPrint(error)
+                self.contentViewController?.showError(error: error)
             }
         }
     }

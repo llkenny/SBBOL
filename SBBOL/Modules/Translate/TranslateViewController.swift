@@ -14,6 +14,7 @@ final class TranslateViewController: UIViewController {
     // MARK: - Properties
 
     @IBOutlet weak var inputTextView: UITextView!
+    @IBOutlet weak var inputPlaceholderLabel: UILabel!
     @IBOutlet weak var outputTextView: UITextView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -98,11 +99,20 @@ extension TranslateViewController: UITextViewDelegate {
 
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text == "\n" {
-            textView.resignFirstResponder()
-            presenter?.didEnterText()
+            textView.endEditing(true)
             return false
         }
         return true
+    }
+
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        inputPlaceholderLabel.isHidden = true
+        return true
+    }
+
+    func textViewDidEndEditing(_ textView: UITextView) {
+        inputPlaceholderLabel.isHidden = textView.text?.isEmpty == false
+        presenter?.didEnterText()
     }
 }
 

@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="activityIndicator" destination="zpZ-3c-ZXf" id="zSP-NC-0YN"/>
                 <outlet property="destinationButton" destination="LRV-6h-Atj" id="eCO-oa-6hA"/>
+                <outlet property="inputPlaceholderLabel" destination="fkG-QF-s1X" id="E2q-0x-8rD"/>
                 <outlet property="inputTextView" destination="fdU-lk-Txp" id="JXl-ap-0tC"/>
                 <outlet property="loadingView" destination="LWW-ou-tmn" id="NUV-8d-HzS"/>
                 <outlet property="outputTextView" destination="aW6-eC-E6X" id="st6-n8-0HM"/>
@@ -70,13 +71,34 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qMX-rG-lhd">
                                     <rect key="frame" x="8" y="8" width="382" height="734"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fdU-lk-Txp">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muw-jM-SJn" userLabel="Text View with Placeholder">
                                             <rect key="frame" x="0.0" y="0.0" width="382" height="165"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
-                                        </textView>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fdU-lk-Txp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="165"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text or website address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkG-QF-s1X">
+                                                    <rect key="frame" x="6" y="8" width="376" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="fdU-lk-Txp" firstAttribute="top" secondItem="muw-jM-SJn" secondAttribute="top" id="2Tv-wh-EkF"/>
+                                                <constraint firstItem="fkG-QF-s1X" firstAttribute="top" secondItem="muw-jM-SJn" secondAttribute="top" constant="8" id="3zr-Qq-GJs"/>
+                                                <constraint firstAttribute="bottom" secondItem="fdU-lk-Txp" secondAttribute="bottom" id="4pR-Gc-6Ma"/>
+                                                <constraint firstAttribute="trailing" secondItem="fdU-lk-Txp" secondAttribute="trailing" id="8vL-nw-OD5"/>
+                                                <constraint firstItem="fkG-QF-s1X" firstAttribute="leading" secondItem="muw-jM-SJn" secondAttribute="leading" constant="6" id="JWt-Uv-FgY"/>
+                                                <constraint firstItem="fdU-lk-Txp" firstAttribute="leading" secondItem="muw-jM-SJn" secondAttribute="leading" id="K7F-Xq-J7l"/>
+                                                <constraint firstAttribute="trailing" secondItem="fkG-QF-s1X" secondAttribute="trailing" id="uEE-oi-BT1"/>
+                                            </constraints>
+                                        </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GH-kW-qit" userLabel="Separator View">
                                             <rect key="frame" x="0.0" y="181" width="382" height="1"/>
                                             <subviews>
@@ -107,8 +129,8 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="fdU-lk-Txp" firstAttribute="height" secondItem="fMI-0m-2QZ" secondAttribute="height" multiplier="0.22" id="3dU-ps-VnU"/>
                                 <constraint firstItem="qMX-rG-lhd" firstAttribute="top" secondItem="fMI-0m-2QZ" secondAttribute="top" constant="8" id="A4C-ng-N6j"/>
+                                <constraint firstItem="muw-jM-SJn" firstAttribute="height" secondItem="fMI-0m-2QZ" secondAttribute="height" multiplier="0.22" id="Ocz-5i-klZ"/>
                                 <constraint firstAttribute="bottom" secondItem="qMX-rG-lhd" secondAttribute="bottom" constant="8" id="pmY-4s-RDC"/>
                                 <constraint firstAttribute="trailing" secondItem="qMX-rG-lhd" secondAttribute="trailing" constant="8" id="qxo-SP-j7p"/>
                                 <constraint firstItem="qMX-rG-lhd" firstAttribute="leading" secondItem="fMI-0m-2QZ" secondAttribute="leading" constant="8" id="y7s-89-BMV"/>

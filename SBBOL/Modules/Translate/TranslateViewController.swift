@@ -13,8 +13,9 @@ final class TranslateViewController: UIViewController {
 
     // MARK: - Properties
 
-    @IBOutlet weak var inputTextField: UITextField!
-    @IBOutlet weak var outputLabel: UILabel!
+    @IBOutlet weak var inputTextView: UITextView!
+    @IBOutlet weak var inputPlaceholderLabel: UILabel!
+    @IBOutlet weak var outputTextView: UITextView!
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var sourceButton: UIButton!
@@ -27,7 +28,7 @@ final class TranslateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         localize()
-        inputTextField.delegate = self
+        inputTextView.delegate = self
         tabBarItem.image = UIImage(systemName: "a.circle.fill")
     }
 
@@ -57,22 +58,23 @@ extension TranslateViewController: TranslatePresenterToView {
 
     var currentText: String? {
         get {
-            return inputTextField.text
+            return inputTextView.text
         } set {
-            inputTextField.text = newValue
+            inputPlaceholderLabel.isHidden = newValue?.isEmpty == false
+            inputTextView.text = newValue
         }
     }
 
     var currentTranslation: String? {
         get {
-            return outputLabel.text
+            return outputTextView.text
         } set {
-            outputLabel.text = newValue
+            outputTextView.text = newValue
         }
     }
 
     func showTranslation(text: String) {
-        outputLabel.text = text
+        outputTextView.text = text
     }
 
     func change(language: Language, for type: LanguageSelectorType) {
@@ -94,12 +96,24 @@ extension TranslateViewController: TranslateControllerToRouter {
     }
 }
 
-extension TranslateViewController: UITextFieldDelegate {
+extension TranslateViewController: UITextViewDelegate {
 
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        presenter?.didEnterText()
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            textView.endEditing(true)
+            return false
+        }
         return true
+    }
+
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        inputPlaceholderLabel.isHidden = true
+        return true
+    }
+
+    func textViewDidEndEditing(_ textView: UITextView) {
+        inputPlaceholderLabel.isHidden = textView.text?.isEmpty == false
+        presenter?.didEnterText()
     }
 }
 

@@ -79,4 +79,13 @@ extension HistoryPresenter: HistoryViewToPresenter {
         performFilter()
         contentViewController?.reload()
     }
+
+    func deleteAllButtonTap() {
+        do {
+            try interactor?.deleteAll()
+            contentViewController?.reload()
+        } catch let error {
+            // TODO: Handle error
+        }
+    }
 }

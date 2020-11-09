@@ -22,6 +22,7 @@ protocol HistoryViewToPresenter: class { // View calls, Presenter listens.
     func item(at indexPath: IndexPath) -> History
     func didSelectItem(at indexPath: IndexPath)
     func didSearch()
+    func deleteAllButtonTap()
 }
 
 protocol HistoryPresenterToView: class {  // Presenter calls, View listens. Presenter receives a reference from this protocol to access View. View conforms to the protocol.
@@ -42,4 +43,5 @@ protocol HistoryControllerToRouter: class {
 protocol HistoryPresenterToInteractor: class {   // Presenter calls, Interactor listens.
 
     func loadHistory() throws -> [History]
+    func deleteAll() throws
 }

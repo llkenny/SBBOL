@@ -32,6 +32,7 @@ final class HistoryViewController: UIViewController {
     // MARK: - IBActions
 
     @IBAction func deleteAll(_ sender: Any) {
+        presenter?.deleteAllButtonTap()
     }
 
     // MARK: - Functions

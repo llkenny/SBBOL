@@ -56,6 +56,7 @@ extension HistoryInteractor: HistoryPresenterToInteractor {
         let request: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: CoreDataService.Constants.historyEntityName)
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: request)
         try coreDataService.persistentContainer.persistentStoreCoordinator.execute(deleteRequest, with: context)
+        try fetchedResultsController.performFetch()
     }
 
     func update(filter: String) throws {

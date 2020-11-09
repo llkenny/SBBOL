@@ -60,6 +60,7 @@ extension TranslateViewController: TranslatePresenterToView {
         get {
             return inputTextView.text
         } set {
+            inputPlaceholderLabel.isHidden = newValue?.isEmpty == false
             inputTextView.text = newValue
         }
     }

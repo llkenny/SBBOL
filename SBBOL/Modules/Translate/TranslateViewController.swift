@@ -28,6 +28,7 @@ final class TranslateViewController: UIViewController {
         super.viewDidLoad()
         localize()
         inputTextField.delegate = self
+        tabBarItem.image = UIImage(systemName: "a.circle.fill")
     }
 
     // MARK: - IBActions

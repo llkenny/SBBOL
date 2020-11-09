@@ -51,6 +51,10 @@ extension LanguageSelectorPresenter: LanguageSelectorViewToPresenter {
         return languages.count
     }
 
+    var languageTypeName: String {
+        return inputModel.type.rawValue.capitalized
+    }
+
     func closeButtonTap(sender: LanguageSelectorViewController) {
         delegate?.close(controller: sender)
     }
